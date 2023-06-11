@@ -666,7 +666,6 @@ namespace ServerPackets
             get { return (short)ServerPacketIds.ObjectPlayer; }
         }
 
-
         public uint ObjectID;
         public string Name = string.Empty;
         public string GuildName = string.Empty;
@@ -2269,49 +2268,6 @@ namespace ServerPackets
             writer.Write(GuildName);
         }
     }
-    public sealed class GainShieldEXP : Packet
-    {
-        public override short Index
-        {
-            get { return (short)ServerPacketIds.GainShieldEXP; }
-        }
-
-        public uint Amount;
-
-        protected override void ReadPacket(BinaryReader reader)
-        {
-            Amount = reader.ReadUInt32();
-        }
-
-        protected override void WritePacket(BinaryWriter writer)
-        {
-            writer.Write(Amount);
-        }
-    }
-
-    public sealed class ItemGainLevel : Packet
-    {
-        public override short Index
-        {
-            get { return (short)ServerPacketIds.ItemGainLevel; }
-        }
-
-        public ulong ObjectID;
-        public uint Level;
-
-        protected override void ReadPacket(BinaryReader reader)
-        {
-            Level = reader.ReadUInt32();
-            ObjectID = reader.ReadUInt64();
-        }
-
-        protected override void WritePacket(BinaryWriter writer)
-        {
-            writer.Write(Level);
-            writer.Write(ObjectID);
-        }
-    }
-
     public sealed class GainExperience : Packet
     {
         public override short Index

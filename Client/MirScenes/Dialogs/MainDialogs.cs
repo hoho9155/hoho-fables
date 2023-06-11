@@ -38,7 +38,7 @@ namespace Client.MirScenes.Dialogs
         public MirAnimatedControl AniHealthOrb, AniManaOrb;
         public MirItemCell[] ItemBelt;
         public SkillBarDialog SkillBar1, SkillBar2;
-        public MirButton LogMirButton;
+        
         public MainDialog()
         {
             Index = 86;
@@ -453,7 +453,7 @@ namespace Client.MirScenes.Dialogs
                 Parent = this,
                 PressedIndex = 145,
                 Sound = SoundList.ButtonA,
-                Hint = "Field Map (" + CMain.InputKeys.GetKey(KeybindOptions.FieldMapDialog) + ")"
+                Hint = "Field Map",
             };
             MapButton.Click += (o, e) =>
             {
@@ -478,19 +478,6 @@ namespace Client.MirScenes.Dialogs
                     GameScene.Scene.FriendDialog.Show();
                 else GameScene.Scene.FriendDialog.Hide();
             };
-            LogMirButton = new MirButton
-            {
-                HoverIndex = 637,
-                Index = 636,
-                Library = Libraries.UI,
-                Location = new Point(18, 75),
-                Parent = this,
-                PressedIndex = 156,
-                Sound = SoundList.ButtonA,
-                Hint = "Exit the Game (" + CMain.InputKeys.GetKey(KeybindOptions.Exit) + ")"
-            };
-            LogMirButton.Click += (o, e) => GameScene.Scene.LogOut();
-            
             MailButton = new MirButton
             {
                 HoverIndex = 155,
@@ -632,7 +619,7 @@ namespace Client.MirScenes.Dialogs
                     break;
             }
 
-            if ((GameScene.Scene.PingTime) > 1)
+            if ((GameScene.Scene.PingTime) > 100)
             {
                 PingLabel.Text = string.Format("Ping: {0}", GameScene.Scene.PingTime);
                 PingLabel.Visible = true;

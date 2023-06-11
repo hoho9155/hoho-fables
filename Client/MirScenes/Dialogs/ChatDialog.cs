@@ -724,16 +724,13 @@ namespace Client.MirScenes.Dialogs
             };
             SettingsButton.Click += (o, e) =>
             {
-                /*
-                    if (GameScene.Scene.ChatOptionDialog.Visible)
-                        GameScene.Scene.ChatOptionDialog.Hide();
-                    else
-                        GameScene.Scene.ChatOptionDialog.Show();
-                */
-                // this.chatDialog.ChangeSize();
-                // Location = new Point(Location.X, this.chatDialog.DisplayRectangle.Top - Size.Height);
-                // this.chatDialog.Transparent = !this.chatDialog.Transparent;
-                // GameScene.Scene.ChatDialog.UpdateBackground();
+                if (GameScene.Scene.ChatOptionDialog.Visible)
+                    GameScene.Scene.ChatOptionDialog.Hide();
+                else
+                    GameScene.Scene.ChatOptionDialog.Show();
+
+                //GameScene.Scene.ChatDialog.Transparent = !GameScene.Scene.ChatDialog.Transparent;
+                //GameScene.Scene.ChatDialog.UpdateBackground();
             };
 
             NormalButton = new MirButton

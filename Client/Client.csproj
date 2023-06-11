@@ -42,7 +42,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\_Client_2023\</OutputPath>
+    <OutputPath>C:\Users\alatt\OneDrive\Desktop\_Client_2023\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>1</WarningLevel>
@@ -273,8 +273,6 @@
     <Compile Include="MirScenes\Dialogs\WeatherEffect.cs" />
     <Compile Include="MirScenes\Dialogs\FieldMapDialog.cs" />
     <Compile Include="MirScenes\GameScene.cs" />
-    <Compile Include="MirScenes\GameScene.Labels.cs" />
-    <Compile Include="MirScenes\GameScene.ProcessPacket.cs" />
     <Compile Include="MirScenes\LoginScene.cs" />
     <Compile Include="MirNetwork\Network.cs" />
     <Compile Include="MirScenes\Dialogs\QuestDialogs.cs" />

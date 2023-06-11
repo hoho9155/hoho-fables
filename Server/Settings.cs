@@ -29,12 +29,12 @@ namespace Server
                             ValuePath = EnvirPath + @".\Values\",
                             ReportPath = @".\Reports\",
                             LogPath = @".\Logs\",
-                            ItemUpgrades = @".\ItemUpgrades\",
                             AchievementsStats = EnvirPath + @"\Achieve-Stats";
 
 
 
         private static readonly InIReader Reader = new InIReader(ConfigPath + @".\Setup.ini");
+
 
         //General
         public static string VersionPath = @".\Mir2.Exe";
@@ -216,17 +216,6 @@ namespace Server
         //Gem Settings
         public static bool GemStatIndependent = true;
 
-        // ShieldLevel Settings
-        public static byte MaxShieldLevel = 5;
-        public static ItemGrade[] ShieldGrades = { ItemGrade.Common, ItemGrade.Rare, ItemGrade.Legendary, ItemGrade.Mythical, ItemGrade.Elite };
-        public static ShieldUpgradeConfig[] ShieldConfig = new ShieldUpgradeConfig[5];
-        public static byte ShieldEXPDivision = 10;
-
-        public static List<long> CommonShieldEXP = new List<long>();
-        public static List<long> RareShieldEXP = new List<long>();
-        public static List<long> LegendaryShieldEXP = new List<long>();
-        public static List<long> MythicalShieldEXP = new List<long>();
-        public static List<long> EliteShieldEXP = new List<long>();
 
         //Goods Settings
         public static bool GoodsOn = true;
@@ -422,10 +411,6 @@ namespace Server
             PvpCanResistPoison = Reader.ReadBoolean("Items", "PvpCanResistPoison", PvpCanResistPoison);
             PvpCanFreeze = Reader.ReadBoolean("Items", "PvpCanFreeze", PvpCanFreeze);
 
-            //Custom
-            MaxShieldLevel = Reader.ReadByte("Custom", "MaxShieldLevel", MaxShieldLevel);
-            ShieldEXPDivision = Reader.ReadByte("Custom", "ShieldEXPDivision", ShieldEXPDivision);
-
             //IntelligentCreature
             for (int i = 0; i < IntelligentCreatureNameList.Length; i++)
                 IntelligentCreatureNameList[i] = Reader.ReadString("IntelligentCreatures", "Creature" + i.ToString() + "Name", IntelligentCreatureNameList[i]);
@@ -500,7 +485,6 @@ namespace Server
             LoadMentor();
             LoadGoods();
             LoadGem();
-            LoadShieldUpgrades();
         }
         public static void Save()
         {
@@ -634,9 +618,6 @@ namespace Server
             Reader.Write("Items", "PvpCanResistMagic", PvpCanResistMagic);
             Reader.Write("Items", "PvpCanResistPoison", PvpCanResistPoison);
             Reader.Write("Items", "PvpCanFreeze", PvpCanFreeze);
-
-            Reader.Write("Custom", "MaxShieldLevel", MaxShieldLevel);
-            Reader.Write("Custom", "ShieldEXPDivision", ShieldEXPDivision);
 
             //IntelligentCreature
             for (int i = 0; i < IntelligentCreatureNameList.Length; i++)
@@ -1360,299 +1341,6 @@ namespace Server
             reader.Write("Goods", "MaxStored", GoodsMaxStored);
             reader.Write("Goods", "BuyBackTime", GoodsBuyBackTime);
             reader.Write("Goods", "BuyBackMaxStored", GoodsBuyBackMaxStored);
-        }
-        public static void SaveShieldUpgrades()
-        {
-            File.Delete(ItemUpgrades + @".\Shield.ini");
-            InIReader reader = new InIReader(ItemUpgrades + @".\Shield.ini");
-            if (MaxShieldLevel > 0)
-            {
-                for (int i = 0; i < CommonShieldEXP.Count; i++)
-                    reader.Write(ShieldGrades[0].ToString(), "Level" + i, CommonShieldEXP[i]);
-                for (int i = 0; i < RareShieldEXP.Count; i++)
-                    reader.Write(ShieldGrades[1].ToString(), "Level" + i, RareShieldEXP[i]);
-                for (int i = 0; i < LegendaryShieldEXP.Count; i++)
-                    reader.Write(ShieldGrades[2].ToString(), "Level" + i, LegendaryShieldEXP[i]);
-                for (int i = 0; i < MythicalShieldEXP.Count; i++)
-                    reader.Write(ShieldGrades[3].ToString(), "Level" + i, MythicalShieldEXP[i]);
-                for (int i = 0; i < EliteShieldEXP.Count; i++)
-                    reader.Write(ShieldGrades[4].ToString(), "Level" + i, EliteShieldEXP[i]);
-            }
-        }
-        public static void SaveShieldConfig()
-        {
-            File.Delete(ItemUpgrades + @".\ShieldConfig.ini");
-            InIReader reader = new InIReader(ItemUpgrades + @".\ShieldConfig.ini");
-            for (int i = 0; i < ShieldConfig.Length; i++)
-            {
-
-                if (ShieldConfig[i] == null)
-                    ShieldConfig[i] = new ShieldUpgradeConfig();
-
-                reader.Write(ShieldGrades[i].ToString(), "MinDC", ShieldConfig[i].MinDC);
-                reader.Write(ShieldGrades[i].ToString(), "MedDC", ShieldConfig[i].MedDC);
-                reader.Write(ShieldGrades[i].ToString(), "MaxDC", ShieldConfig[i].MaxDC);
-                reader.Write(ShieldGrades[i].ToString(), "MinDCRate", ShieldConfig[i].MinDCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedDCRate", ShieldConfig[i].MedDCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxDCRate", ShieldConfig[i].MaxDCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinMC", ShieldConfig[i].MinMC);
-                reader.Write(ShieldGrades[i].ToString(), "MedMC", ShieldConfig[i].MedMC);
-                reader.Write(ShieldGrades[i].ToString(), "MaxMC", ShieldConfig[i].MaxMC);
-                reader.Write(ShieldGrades[i].ToString(), "MinMCRate", ShieldConfig[i].MinMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedMCRate", ShieldConfig[i].MedMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxMCRate", ShieldConfig[i].MaxMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinSC", ShieldConfig[i].MinSC);
-                reader.Write(ShieldGrades[i].ToString(), "MedSC", ShieldConfig[i].MedSC);
-                reader.Write(ShieldGrades[i].ToString(), "MaxSC", ShieldConfig[i].MaxSC);
-                reader.Write(ShieldGrades[i].ToString(), "MinSCRate", ShieldConfig[i].MinSCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedSCRate", ShieldConfig[i].MedSCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxSCRate", ShieldConfig[i].MaxSCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinAC", ShieldConfig[i].MinAC);
-                reader.Write(ShieldGrades[i].ToString(), "MedAC", ShieldConfig[i].MedAC);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAC", ShieldConfig[i].MaxAC);
-                reader.Write(ShieldGrades[i].ToString(), "MinACRate", ShieldConfig[i].MinACRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedACRate", ShieldConfig[i].MedACRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxACRate", ShieldConfig[i].MaxACRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinAMC", ShieldConfig[i].MinAMC);
-                reader.Write(ShieldGrades[i].ToString(), "MedAMC", ShieldConfig[i].MedAMC);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAMC", ShieldConfig[i].MaxAMC);
-                reader.Write(ShieldGrades[i].ToString(), "MinAMCRate", ShieldConfig[i].MinAMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedAMCRate", ShieldConfig[i].MedAMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAMCRate", ShieldConfig[i].MaxAMCRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinHP", ShieldConfig[i].MinHP);
-                reader.Write(ShieldGrades[i].ToString(), "MedHP", ShieldConfig[i].MedHP);
-                reader.Write(ShieldGrades[i].ToString(), "MaxHP", ShieldConfig[i].MaxHP);
-                reader.Write(ShieldGrades[i].ToString(), "MinHPRate", ShieldConfig[i].MinHPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedHPRate", ShieldConfig[i].MedHPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxHPRate", ShieldConfig[i].MaxHPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinMP", ShieldConfig[i].MinMP);
-                reader.Write(ShieldGrades[i].ToString(), "MedMP", ShieldConfig[i].MedMP);
-                reader.Write(ShieldGrades[i].ToString(), "MaxMP", ShieldConfig[i].MaxMP);
-                reader.Write(ShieldGrades[i].ToString(), "MinMPRate", ShieldConfig[i].MinMPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedMPRate", ShieldConfig[i].MedMPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxMPRate", ShieldConfig[i].MaxMPRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinAcc", ShieldConfig[i].MinAcc);
-                reader.Write(ShieldGrades[i].ToString(), "MedAcc", ShieldConfig[i].MedAcc);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAcc", ShieldConfig[i].MaxAcc);
-                reader.Write(ShieldGrades[i].ToString(), "MinAccRate", ShieldConfig[i].MinAccRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedAccRate", ShieldConfig[i].MedAccRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAccRate", ShieldConfig[i].MaxAccRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinAgil", ShieldConfig[i].MinAgil);
-                reader.Write(ShieldGrades[i].ToString(), "MedAgil", ShieldConfig[i].MedAgil);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAgil", ShieldConfig[i].MaxAgil);
-                reader.Write(ShieldGrades[i].ToString(), "MinAgilRate", ShieldConfig[i].MinAgilRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedAgilRate", ShieldConfig[i].MedAgilRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxAgilRate", ShieldConfig[i].MaxAgilRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinCrit", ShieldConfig[i].MinCrit);
-                reader.Write(ShieldGrades[i].ToString(), "MedCrit", ShieldConfig[i].MedCrit);
-                reader.Write(ShieldGrades[i].ToString(), "MaxCrit", ShieldConfig[i].MaxCrit);
-                reader.Write(ShieldGrades[i].ToString(), "MinCritRate", ShieldConfig[i].MinCritRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedCritRate", ShieldConfig[i].MedCritRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxCritRate", ShieldConfig[i].MaxCritRate);
-                reader.Write(ShieldGrades[i].ToString(), "MinCritDmg", ShieldConfig[i].MinCritDmg);
-                reader.Write(ShieldGrades[i].ToString(), "MedCritDmg", ShieldConfig[i].MedCritDmg);
-                reader.Write(ShieldGrades[i].ToString(), "MaxCritDmg", ShieldConfig[i].MaxCritDmg);
-                reader.Write(ShieldGrades[i].ToString(), "MinCritDmgRate", ShieldConfig[i].MinCritDmgRate);
-                reader.Write(ShieldGrades[i].ToString(), "MedCritDmgRate", ShieldConfig[i].MedCritDmgRate);
-                reader.Write(ShieldGrades[i].ToString(), "MaxCritDmgRate", ShieldConfig[i].MaxCritDmgRate);
-            }
-        }
-
-        public static void LoadShieldUpgrades()
-        {
-            if (MaxShieldLevel > 0)
-            {
-                for (int i = 0; i < MaxShieldLevel; i++)
-                    CommonShieldEXP.Add(1000 * i);
-                for (int i = 0; i < MaxShieldLevel; i++)
-                    RareShieldEXP.Add(1000 * i);
-                for (int i = 0; i < MaxShieldLevel; i++)
-                    LegendaryShieldEXP.Add(1000 * i);
-                for (int i = 0; i < MaxShieldLevel; i++)
-                    MythicalShieldEXP.Add(1000 * i);
-                for (int i = 0; i < MaxShieldLevel; i++)
-                    EliteShieldEXP.Add(1000 * i);
-
-                if (!File.Exists(ItemUpgrades + @".\Shield.ini"))
-                {
-                    SaveShieldUpgrades();
-                    return;
-                }
-
-                InIReader reader = new InIReader(ItemUpgrades + @".\Shield.ini");
-
-                for (int i = 0; i < MaxShieldLevel; i++)
-                {
-                    long tmp = reader.ReadInt64(ShieldGrades[0].ToString(), "Level" + i.ToString(), CommonShieldEXP[i]);
-                    CommonShieldEXP[i] = tmp;
-                }
-                for (int i = 0; i < MaxShieldLevel; i++)
-                {
-                    long tmp = reader.ReadInt64(ShieldGrades[1].ToString(), "Level" + i.ToString(), RareShieldEXP[i]);
-                    RareShieldEXP[i] = tmp;
-                }
-                for (int i = 0; i < MaxShieldLevel; i++)
-                {
-                    long tmp = reader.ReadInt64(ShieldGrades[2].ToString(), "Level" + i.ToString(), LegendaryShieldEXP[i]);
-                    LegendaryShieldEXP[i] = tmp;
-                }
-                for (int i = 0; i < MaxShieldLevel; i++)
-                {
-                    long tmp = reader.ReadInt64(ShieldGrades[3].ToString(), "Level" + i.ToString(), MythicalShieldEXP[i]);
-                    MythicalShieldEXP[i] = tmp;
-                }
-                for (int i = 0; i < MaxShieldLevel; i++)
-                {
-                    long tmp = reader.ReadInt64(ShieldGrades[3].ToString(), "Level" + i.ToString(), EliteShieldEXP[i]);
-                    EliteShieldEXP[i] = tmp;
-                }
-            }
-            if (!File.Exists(ItemUpgrades + @".\ShieldConfig.ini"))
-            {
-                SaveShieldConfig();
-                return;
-            }
-            else
-            {
-                InIReader reader = new InIReader(ItemUpgrades + @".\ShieldConfig.ini");
-                for (int i = 0; i < ShieldConfig.Length; i++)
-                {
-                    ShieldConfig[i] = new ShieldUpgradeConfig();
-                    byte tmp = 0;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinDC", ShieldConfig[i].MinDC);
-                    ShieldConfig[i].MinDC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedDC", ShieldConfig[i].MedDC);
-                    ShieldConfig[i].MedDC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxDC", ShieldConfig[i].MaxDC);
-                    ShieldConfig[i].MaxDC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinDCRate", ShieldConfig[i].MinDCRate);
-                    ShieldConfig[i].MinDCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedDCRate", ShieldConfig[i].MedDCRate);
-                    ShieldConfig[i].MedDCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxDCRate", ShieldConfig[i].MaxDCRate);
-                    ShieldConfig[i].MaxDCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinMC", ShieldConfig[i].MinMC);
-                    ShieldConfig[i].MinMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedMC", ShieldConfig[i].MedMC);
-                    ShieldConfig[i].MedMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxMC", ShieldConfig[i].MaxMC);
-                    ShieldConfig[i].MaxMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinMCRate", ShieldConfig[i].MinMCRate);
-                    ShieldConfig[i].MinMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedMCRate", ShieldConfig[i].MedMCRate);
-                    ShieldConfig[i].MedMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxMCRate", ShieldConfig[i].MaxMCRate);
-                    ShieldConfig[i].MaxMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinSC", ShieldConfig[i].MinSC);
-                    ShieldConfig[i].MinSC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedSC", ShieldConfig[i].MedSC);
-                    ShieldConfig[i].MedSC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxSC", ShieldConfig[i].MaxSC);
-                    ShieldConfig[i].MaxSC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinSCRate", ShieldConfig[i].MinSCRate);
-                    ShieldConfig[i].MinSCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedSCRate", ShieldConfig[i].MedSCRate);
-                    ShieldConfig[i].MedSCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxSCRate", ShieldConfig[i].MaxSCRate);
-                    ShieldConfig[i].MaxSCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAC", ShieldConfig[i].MinAC);
-                    ShieldConfig[i].MinAC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAC", ShieldConfig[i].MedAC);
-                    ShieldConfig[i].MedAC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAC", ShieldConfig[i].MaxAC);
-                    ShieldConfig[i].MaxAC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinACRate", ShieldConfig[i].MinACRate);
-                    ShieldConfig[i].MinACRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedACRate", ShieldConfig[i].MedACRate);
-                    ShieldConfig[i].MedACRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxACRate", ShieldConfig[i].MaxACRate);
-                    ShieldConfig[i].MaxACRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAMC", ShieldConfig[i].MinAMC);
-                    ShieldConfig[i].MinAMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAMC", ShieldConfig[i].MedAMC);
-                    ShieldConfig[i].MedAMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAMC", ShieldConfig[i].MaxAMC);
-                    ShieldConfig[i].MaxAMC = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAMCRate", ShieldConfig[i].MinAMCRate);
-                    ShieldConfig[i].MinAMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAMCRate", ShieldConfig[i].MedAMCRate);
-                    ShieldConfig[i].MedAMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAMCRate", ShieldConfig[i].MaxAMCRate);
-                    ShieldConfig[i].MaxAMCRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinHP", ShieldConfig[i].MinHP);
-                    ShieldConfig[i].MinHP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedHP", ShieldConfig[i].MedHP);
-                    ShieldConfig[i].MedHP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxHP", ShieldConfig[i].MaxHP);
-                    ShieldConfig[i].MaxHP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinHPRate", ShieldConfig[i].MinHPRate);
-                    ShieldConfig[i].MinHPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedHPRate", ShieldConfig[i].MedHPRate);
-                    ShieldConfig[i].MedHPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxHPRate", ShieldConfig[i].MaxHPRate);
-                    ShieldConfig[i].MaxHPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinMP", ShieldConfig[i].MinMP);
-                    ShieldConfig[i].MinMP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedMP", ShieldConfig[i].MedMP);
-                    ShieldConfig[i].MedMP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxMP", ShieldConfig[i].MaxMP);
-                    ShieldConfig[i].MaxMP = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinMPRate", ShieldConfig[i].MinMPRate);
-                    ShieldConfig[i].MinMPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedMPRate", ShieldConfig[i].MedMPRate);
-                    ShieldConfig[i].MedMPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxMPRate", ShieldConfig[i].MaxMPRate);
-                    ShieldConfig[i].MaxMPRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAcc", ShieldConfig[i].MinAcc);
-                    ShieldConfig[i].MinAcc = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAcc", ShieldConfig[i].MedAcc);
-                    ShieldConfig[i].MedAcc = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAcc", ShieldConfig[i].MaxAcc);
-                    ShieldConfig[i].MaxAcc = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAccRate", ShieldConfig[i].MinAccRate);
-                    ShieldConfig[i].MinAccRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAccRate", ShieldConfig[i].MedAccRate);
-                    ShieldConfig[i].MedAccRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAccRate", ShieldConfig[i].MaxAccRate);
-                    ShieldConfig[i].MaxAccRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAgil", ShieldConfig[i].MinAgil);
-                    ShieldConfig[i].MinAgil = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAgil", ShieldConfig[i].MedAgil);
-                    ShieldConfig[i].MedAgil = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAgil", ShieldConfig[i].MaxAgil);
-                    ShieldConfig[i].MaxAgil = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinAgilRate", ShieldConfig[i].MinAgilRate);
-                    ShieldConfig[i].MinAgilRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedAgilRate", ShieldConfig[i].MedAgilRate);
-                    ShieldConfig[i].MedAgilRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxAgilRate", ShieldConfig[i].MaxAgilRate);
-                    ShieldConfig[i].MaxAgilRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinCrit", ShieldConfig[i].MinCrit);
-                    ShieldConfig[i].MinCrit = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedCrit", ShieldConfig[i].MedCrit);
-                    ShieldConfig[i].MedCrit = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxCrit", ShieldConfig[i].MaxCrit);
-                    ShieldConfig[i].MaxCrit = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinCritRate", ShieldConfig[i].MinCritRate);
-                    ShieldConfig[i].MinCritRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedCritRate", ShieldConfig[i].MedCritRate);
-                    ShieldConfig[i].MedCritRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxCritRate", ShieldConfig[i].MaxCritRate);
-                    ShieldConfig[i].MaxCritRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinCritDmg", ShieldConfig[i].MinCritDmg);
-                    ShieldConfig[i].MinCritDmg = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedCritDmg", ShieldConfig[i].MedCritDmg);
-                    ShieldConfig[i].MedCritDmg = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxCritDmg", ShieldConfig[i].MaxCritDmg);
-                    ShieldConfig[i].MaxCritDmg = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MinCritDmgRate", ShieldConfig[i].MinCritDmgRate);
-                    ShieldConfig[i].MinCritDmgRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MedCritDmgRate", ShieldConfig[i].MedCritDmgRate);
-                    ShieldConfig[i].MedCritDmgRate = tmp;
-                    tmp = reader.ReadByte(ShieldGrades[i].ToString(), "MaxCritDmgRate", ShieldConfig[i].MaxCritDmgRate);
-                    ShieldConfig[i].MaxCritDmgRate = tmp;
-                }
-            }
         }
 
     }

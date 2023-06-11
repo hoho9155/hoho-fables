@@ -9,7 +9,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Controls;
 using S = ServerPackets;
 
 namespace Server.MirObjects
@@ -76,9 +75,9 @@ namespace Server.MirObjects
         public List<QuestInfo> Quests = new List<QuestInfo>();
         public List<RecipeInfo> CraftGoods = new List<RecipeInfo>();
 
-        public List<NPCSpeak> NpcSpeakList = new List<NPCSpeak>();
-        public byte NpcSpeakLine = 0;
-        public long NpcSpeakLineDelayTime = 0;
+        public List<NPCSpeak> NPCSpeakList = new List<NPCSpeak>();
+        public byte NPCSpeakLine = 0;
+        public long NPCSpeakLineDelayTime = 0;
 
         public Dictionary<int, bool> VisibleLog = new Dictionary<int, bool>();
 
@@ -99,8 +98,8 @@ namespace Server.MirObjects
         public NPCObject(NPCInfo info)
         {
             Info = info;
-            NameColour = Color.MediumTurquoise;
-            
+            NameColour = Color.Lime;
+
             if (!Info.IsDefault)
             {
                 Direction = (MirDirection)Envir.Random.Next(3);
@@ -142,7 +141,7 @@ namespace Server.MirObjects
             Types = new List<ItemType>();
             NPCPages = new List<NPCPage>();
             CraftGoods = new List<RecipeInfo>();
-            NpcSpeakList = new List<NPCSpeak>();
+            NPCSpeakList = new List<NPCSpeak>();
 
             if (Info.IsDefault)
             {
@@ -162,7 +161,7 @@ namespace Server.MirObjects
                     int version = reader.ReadInt32();
                     int count = version;
                     int customversion = Envir.LoadCustomVersion;
-                    if (version == 999)//the only real way to tell if the file was made before or after version code got added: assuming nobody had a config option to save more then 10000 sold items :p
+                    if (version == 9999)//the only real way to tell if the file was made before or after version code got added: assuming nobody had a config option to save more then 10000 sold items :p
                     {
                         version = reader.ReadInt32();
                         customversion = reader.ReadInt32();
@@ -717,13 +716,13 @@ namespace Server.MirObjects
                     var data = lines[i].Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
                     if (data.Length != 2) continue;
 
-                    NpcSpeakList.Add(new MirObjects.NPCSpeak
+                    NPCSpeakList.Add(new MirObjects.NPCSpeak
                     {
                         Delay = Convert.ToUInt16(data[0]),
                         Message = data[1]
                     });
 
-                     SMain.Enqueue(string.Format("Check : {0}, NPC: {1}", lines[i], Info.FileName));                       
+                    // SMain.Enqueue(string.Format("Could not find Item: {0}, File: {1}", lines[i], Info.FileName));                       
                 }
             }
         }
@@ -750,7 +749,7 @@ namespace Server.MirObjects
             }
         }
 
-        public void Call(string key) //run a very limited npc script (should really only be used to spawn mobs or something)
+        public void Call(string key) //run a verry limited npc script (should really only be used to spawn mobs or something)
         {
             key = key.ToUpper();
 
@@ -1097,20 +1096,20 @@ namespace Server.MirObjects
             base.Process();
             
             // Paul
-            if (NpcSpeakList.Count > 0)
+            if (NPCSpeakList.Count > 0)
             {
-                if (NpcSpeakLine == 0 && NpcSpeakLineDelayTime == 0) NpcSpeakLineDelayTime = Envir.Time + NpcSpeakList[NpcSpeakLine].Delay;
+                if (NPCSpeakLine == 0 && NPCSpeakLineDelayTime == 0) NPCSpeakLineDelayTime = Envir.Time + NPCSpeakList[NPCSpeakLine].Delay;
 
-                if (Envir.Time > NpcSpeakLineDelayTime)
+                if (Envir.Time > NPCSpeakLineDelayTime)
                 {
                     var displayName = Name.Split('_');
 
-                    foreach (var player in FindNearby(30)) Broadcast(new S.ObjectChat { ObjectID = this.ObjectID, Text = ((displayName.Length > 1) ? displayName[1] : displayName[0]) + ": " + NpcSpeakList[NpcSpeakLine].Message, Type = ChatType.Normal });
+                    foreach (var player in FindNearby(5)) Broadcast(new S.ObjectChat { ObjectID = this.ObjectID, Text = ((displayName.Length > 1) ? displayName[1] : displayName[0]) + ": " + NPCSpeakList[NPCSpeakLine].Message, Type = ChatType.Normal });
                     
-                    if (NpcSpeakLine == NpcSpeakList.Count - 1) NpcSpeakLine = 0;
-                    else NpcSpeakLine++;
+                    if (NPCSpeakLine == NPCSpeakList.Count - 1) NPCSpeakLine = 0;
+                    else NPCSpeakLine++;
 
-                    NpcSpeakLineDelayTime = Envir.Time + NpcSpeakList[NpcSpeakLine].Delay;
+                    NPCSpeakLineDelayTime = Envir.Time + NPCSpeakList[NPCSpeakLine].Delay;
                 }
             }
 

@@ -64,14 +64,3 @@ C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\ClientCFG\obj\Debug\Cl
 C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\ClientCFG\obj\Debug\ClientCFG.csproj.GenerateResource.cache
 C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\ClientCFG\obj\Debug\ClientCFG.exe
 C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\ClientCFG\obj\Debug\ClientCFG.pdb
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\bin\Debug\ClientCFG.exe.config
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\bin\Debug\ClientCFG.exe
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\bin\Debug\ClientCFG.pdb
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.csproj.AssemblyReference.cache
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.csproj.SuggestedBindingRedirects.cache
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.Form1.resources
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.Properties.Resources.resources
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.csproj.GenerateResource.cache
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.csproj.CoreCompileInputs.cache
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.exe
-C:\Users\alatt\OneDrive\Desktop\$Fables\ClientCFG\obj\Debug\ClientCFG.pdb

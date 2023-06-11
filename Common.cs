@@ -746,24 +746,7 @@ public enum MirAction : byte
 
     FishingCast,
     FishingWait,
-    FishingReel,
-    
-    
-    Combo1,
-    Combo2,
-    Combo3,
-    Combo4,
-    Combo5,
-    Combo6,
-    
-    ComboAttack1,
-    ComboAttack2,
-    ComboAttack3,
-    ComboAttack4,
-    ComboAttack5,
-    ComboAttack6,
-    ComboAttack7,
-    ComboAttack8
+    FishingReel
 }
 
 public enum CellAttribute : byte
@@ -1572,10 +1555,7 @@ public enum ServerPacketIds : short
     ItemRentalPartnerLock,
     CanConfirmItemRental,
     ConfirmItemRental,
-    NewRecipeInfo,
-
-    GainShieldEXP,
-    ItemGainLevel
+    NewRecipeInfo
 }
 
 public enum ClientPacketIds : short
@@ -2713,32 +2693,6 @@ public class ItemInfo
     public RandomItemStat RandomStats;
     public string ToolTip = string.Empty;
 
-    public bool AllowLvlSys = true;
-    public bool AllowRandomStats = false;
-
-    public int[] LevelWeapLooks = new int[10];
-    public int[] LevelArmourLooks = new int[10];
-    public int[] LevelItemLooks = new int[10];
-    public int[] LevelWeapEffect = new int[10];
-    public int[] LevelItemGlow = new int[10];
-    public int[] LevelArmourEffect = new int[10];
-
-    public int[] LvlSysExp = new int[10];
-
-    public int[] LvlSysMinAC = new int[10];
-    public int[] LvlSysMaxAC = new int[10];
-
-    public int[] LvlSysMinMAC = new int[10];
-    public int[] LvlSysMaxMAC = new int[10];
-
-    public int[] LvlSysMinSC = new int[10];
-    public int[] LvlSysMaxSC = new int[10];
-
-    public int[] LvlSysMinMC = new int[10];
-    public int[] LvlSysMaxMC = new int[10];
-
-    public int[] LvlSysMinDC = new int[10];
-    public int[] LvlSysMaxDC = new int[10];
 
     public bool IsConsumable
     {
@@ -3121,14 +3075,6 @@ public class UserItem
     public RentalInformation RentalInformation;
 
 	public Awake Awake = new Awake();
-
-    public byte ShieldLevel = 0;
-    public long ShieldExp;
-    public long NeedShieldExp;
-
-    public int LvlSysExpGained;
-    public int LvlSystem;
-
     public bool IsAdded
     {
         get
@@ -3237,18 +3183,6 @@ public class UserItem
 
         if (reader.ReadBoolean())
             RentalInformation = new RentalInformation(reader, version, Customversion);
-
-        if (version > 79)
-        {
-            ShieldLevel = reader.ReadByte();
-            ShieldExp = reader.ReadInt64();
-
-            NeedShieldExp = reader.ReadInt64();
-
-
-            LvlSysExpGained = reader.ReadInt32();
-            LvlSystem = reader.ReadInt32();
-        }
     }
 
     public void Save(BinaryWriter writer)
@@ -3313,14 +3247,6 @@ public class UserItem
         ExpireInfo?.Save(writer);
 
         writer.Write(RentalInformation != null);
-
-        writer.Write(ShieldLevel);
-        writer.Write(ShieldExp);
-        writer.Write(NeedShieldExp);
-
-        writer.Write(LvlSysExpGained);
-        writer.Write(LvlSystem);
-
         RentalInformation?.Save(writer);
     }
 
@@ -3352,65 +3278,6 @@ public class UserItem
 
         return p * Count;
     }
-
-    public void ItemLevelUp(ushort level, MirClass job, MirGender gender, List<ItemInfo> list)
-    {
-        ItemInfo realItem = Functions.GetRealItem(Info, level, job, list);
-        if (Info.AllowRandomStats)
-        {
-
-            Random rand = new Random(DateTime.Now.Millisecond);
-
-            MC = (byte)Math.Min(byte.MaxValue, MC + rand.Next(0, realItem.LvlSysMaxMC[LvlSystem - 1]));
-            DC = (byte)Math.Min(byte.MaxValue, DC + rand.Next(0, realItem.LvlSysMaxDC[LvlSystem - 1]));
-            SC = (byte)Math.Min(byte.MaxValue, SC + rand.Next(0, realItem.LvlSysMaxSC[LvlSystem - 1]));
-
-            HP = (byte)Math.Min(byte.MaxValue, HP + rand.Next(0, realItem.LvlSysMaxSC[LvlSystem - 5]));
-            MP = (byte)Math.Min(byte.MaxValue, MP + rand.Next(0, realItem.LvlSysMaxSC[LvlSystem - 5]));
-
-            AC = (byte)Math.Min(byte.MaxValue, AC + rand.Next(0, realItem.LvlSysMaxAC[LvlSystem - 1]));
-            MAC = (byte)Math.Min(byte.MaxValue, MAC + rand.Next(0, realItem.LvlSysMaxMAC[LvlSystem - 1]));
-        }
-        else
-        {
-            MC = (byte)Math.Min(byte.MaxValue, MC + realItem.LvlSysMaxMC[LvlSystem - 1]);
-            DC = (byte)Math.Min(byte.MaxValue, DC + realItem.LvlSysMaxDC[LvlSystem - 1]);
-            SC = (byte)Math.Min(byte.MaxValue, SC + realItem.LvlSysMaxSC[LvlSystem - 1]);
-
-            HP = (byte)Math.Min(byte.MaxValue, HP + realItem.LvlSysMaxSC[LvlSystem - 5]);
-            MP = (byte)Math.Min(byte.MaxValue, MP + realItem.LvlSysMaxSC[LvlSystem - 5]);
-
-            AC = (byte)Math.Min(byte.MaxValue, AC + realItem.LvlSysMaxAC[LvlSystem - 1]);
-            MAC = (byte)Math.Min(byte.MaxValue, MAC + realItem.LvlSysMaxMAC[LvlSystem - 1]);
-        }
-    }
-
-    public bool ItemGainExp(int exp)
-    {
-        if (!Info.AllowLvlSys) return false;
-        if (LvlSystem == Info.LvlSysExp.Length - 1) return false;
-        if (Info.LvlSysExp[LvlSystem] == 0) return false;
-
-        LvlSysExpGained += exp;
-
-        var loop = true;
-        var lvlUP = false;
-        while (loop)
-        {
-            if (LvlSystem < Info.LvlSysExp.Length - 1 && Info.LvlSysExp[LvlSystem] != 0 && LvlSysExpGained >= Info.LvlSysExp[LvlSystem])
-            {
-                LvlSysExpGained -= Info.LvlSysExp[LvlSystem];
-                LvlSystem++;
-                lvlUP = true;
-
-            }
-            else
-                loop = false;
-        }
-
-        return lvlUP;
-    }
-
     public uint RepairPrice()
     {
         if (Info == null || Info.Durability == 0)
@@ -3588,13 +3455,7 @@ public class UserItem
             RefineAdded = RefineAdded,
 
             ExpireInfo = ExpireInfo,
-            RentalInformation = RentalInformation,
-
-            ShieldLevel = ShieldLevel,
-            ShieldExp = ShieldExp,
-            NeedShieldExp = NeedShieldExp,
-            LvlSystem = LvlSystem,
-            LvlSysExpGained = LvlSysExpGained,
+            RentalInformation = RentalInformation
         };
 
         return item;
@@ -3737,7 +3598,7 @@ public class Awake
     public static byte Awake_ArmorRate = 5;
     public static byte AwakeChanceMin = 1;
     public static float[] AwakeMaterialRate = new float[4] { 1.0F, 1.0F, 1.0F, 1.0F };
-    public static byte[] AwakeChanceMax = new byte[5] { 1, 2, 3, 4 ,5};
+    public static byte[] AwakeChanceMax = new byte[4] { 1, 2, 3, 4 };
     public static List<List<byte>[]> AwakeMaterials = new List<List<byte>[]>();
 
     public AwakeType type;
@@ -3801,7 +3662,9 @@ public class Awake
         {
             if (item.Info.Type == ItemType.Weapon)
             {
-                if (type == AwakeType.DC || type == AwakeType.MC || type == AwakeType.SC)
+                if (type == AwakeType.DC ||
+                    type == AwakeType.MC ||
+                    type == AwakeType.SC)
                 {
                     this.type = type;
                     return true;
@@ -3811,7 +3674,8 @@ public class Awake
             }
             else if (item.Info.Type == ItemType.Helmet)
             {
-                if (type == AwakeType.AC || type == AwakeType.MAC)
+                if (type == AwakeType.AC ||
+                    type == AwakeType.MAC)
                 {
                     this.type = type;
                     return true;
@@ -5082,10 +4946,6 @@ public abstract class Packet
                 return new S.ObjectGuildNameChanged();
             case (short)ServerPacketIds.GainExperience:
                 return new S.GainExperience();
-            case (short)ServerPacketIds.GainShieldEXP:
-                return new S.GainShieldEXP();
-            case (short)ServerPacketIds.ItemGainLevel:
-                return new S.ItemGainLevel();
             case (short)ServerPacketIds.LevelChanged:
                 return new S.LevelChanged();
             case (short)ServerPacketIds.ObjectLeveled:
@@ -5419,27 +5279,6 @@ public abstract class Packet
         }
     }
 }
-
-public class ShieldUpgradeConfig
-{
-    public byte MinDC, MedDC, MaxDC, MinDCRate, MedDCRate, MaxDCRate;
-    public byte MinMC, MedMC, MaxMC, MinMCRate, MedMCRate, MaxMCRate;
-    public byte MinSC, MedSC, MaxSC, MinSCRate, MedSCRate, MaxSCRate;
-    public byte MinAC, MedAC, MaxAC, MinACRate, MedACRate, MaxACRate;
-    public byte MinAMC, MedAMC, MaxAMC, MinAMCRate, MedAMCRate, MaxAMCRate;
-    public byte MinHP, MedHP, MaxHP, MinHPRate, MedHPRate, MaxHPRate;
-    public byte MinMP, MedMP, MaxMP, MinMPRate, MedMPRate, MaxMPRate;
-    public byte MinAcc, MedAcc, MaxAcc, MinAccRate, MedAccRate, MaxAccRate;
-    public byte MinAgil, MedAgil, MaxAgil, MinAgilRate, MedAgilRate, MaxAgilRate;
-    public byte MinCrit, MedCrit, MaxCrit, MinCritRate, MedCritRate, MaxCritRate;
-    public byte MinCritDmg, MedCritDmg, MaxCritDmg, MinCritDmgRate, MedCritDmgRate, MaxCritDmgRate;
-
-    public ShieldUpgradeConfig()
-    {
-
-    }
-}
-
 
 public class BaseStats
 {

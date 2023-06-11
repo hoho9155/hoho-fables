@@ -379,8 +379,6 @@ namespace Server.MirObjects
             SearchTime = Envir.Random.Next(SearchDelay) + Envir.Time;
             RoamTime = Envir.Random.Next(RoamDelay) + Envir.Time;
         }
-
-
         public bool Spawn(Map temp, Point location)
         {
             if (!temp.ValidPoint(location)) return false;
@@ -708,8 +706,7 @@ namespace Server.MirObjects
                 Respawn.Count--;
 
             if (Master == null && EXPOwner != null)
-                
-                Drop();
+                 Drop();
 
             Master = null;
 

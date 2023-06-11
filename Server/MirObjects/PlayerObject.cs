@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -25,7 +25,7 @@ namespace Server.MirObjects
         public long LastRecallTime, LastRevivalTime, LastTeleportTime, LastProbeTime, MenteeEXP;
 
         public short Looks_Armour = 0, Looks_Weapon = -1, Looks_WeaponEffect = 0, Shield_Looks = -1, Shield_Effect = 0;
-        public byte Looks_Wings = 5;
+        public byte Looks_Wings = 0;
 
         public bool WarZone = false;
 
@@ -1334,7 +1334,7 @@ namespace Server.MirObjects
                     UserItem weapon = hitter.Info.Equipment[(byte)EquipmentSlot.Weapon];
 
                     hitter.PKPoints = Math.Min(int.MaxValue, LastHitter.PKPoints + 100);
-                    hitter.ReceiveChat(string.Format("You have murdered [{0}] and gained 100 PKPoints.", Name), ChatType.System);
+                    hitter.ReceiveChat(string.Format("You have murdered [{0}]", Name), ChatType.System);
                     ReceiveChat(string.Format("You have been murdered by [{0}]", LastHitter.Name), ChatType.System);
 
                     if (weapon != null && weapon.Luck > (Settings.MaxLuck * -1) && Envir.Random.Next(4) == 0)
@@ -1774,51 +1774,6 @@ namespace Server.MirObjects
             if (Info.Mentor != 0 && !Info.isMentor)
                 MenteeEXP += (amount / 100) * Settings.MenteeExpBank;
 
-            if (Info != null &&
-                Info.Equipment != null)
-            {
-                int shieldEXP = ((int)amount / Settings.ShieldEXPDivision);
-                bool foundOne = false;
-                if (shieldEXP > 0)
-                {
-                    if (Info.Equipment[(int)EquipmentSlot.Shield] != null)
-                    {
-                        UpgradeShield(shieldEXP);
-                        foundOne = true;
-                    }
-
-                    if (foundOne)
-                        Enqueue(new S.GainShieldEXP { Amount = (uint)shieldEXP });
-                }
-            }
-
-            for (int i = 0; i < Info.Equipment.Length; i++)
-            {
-                if (Info.Equipment[i] == null)
-                    continue;
-                ItemInfo tempII = Info.Equipment[i].Info;
-                UserItem tempUI = Info.Equipment[i];
-                if (!tempII.AllowLvlSys)
-                    continue;
-                if (tempUI.LvlSystem > 5)
-                    continue;
-
-                var exp = ((int)amount / 10);
-
-                if (exp > 0)
-                {
-
-                    if (tempUI.ItemGainExp(exp))
-                    {
-                        tempUI.ItemLevelUp(Level, Class, Gender, Envir.ItemInfoList);
-                        ReceiveChat(tempUI.FriendlyName + " has leveled up!", ChatType.System);
-                    }
-
-                    Enqueue(new S.RefreshItem { Item = tempUI });
-                }
-            }
-
-
             Experience += amount;
 
             Enqueue(new S.GainExperience { Amount = amount });
@@ -2129,662 +2084,6 @@ namespace Server.MirObjects
                 CallDefaultNPC(DefaultNPCType.Daily);
             }
         }
-
-        public UserItem UpgradeRandomShieldStat(UserItem item)
-        {
-            byte tmp = 0;
-            switch (item.Info.Grade)
-            {
-                case ItemGrade.Common:
-                    if (Settings.ShieldConfig[0].MinDC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinDC : Envir.Random.Next(Settings.ShieldConfig[0].MedDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedDC : Envir.Random.Next(Settings.ShieldConfig[0].MaxDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxDC : (byte)0;
-                        item.DC = (byte)Math.Min(byte.MaxValue, item.DC + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinMC : Envir.Random.Next(Settings.ShieldConfig[0].MedMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedMC : Envir.Random.Next(Settings.ShieldConfig[0].MaxMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxMC : (byte)0;
-                        item.MC = (byte)Math.Min(byte.MaxValue, item.MC + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinSC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinSC : Envir.Random.Next(Settings.ShieldConfig[0].MedSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedSC : Envir.Random.Next(Settings.ShieldConfig[0].MaxSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxSC : (byte)0;
-                        item.SC = (byte)Math.Min(byte.MaxValue, item.SC + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinHP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinHP : Envir.Random.Next(Settings.ShieldConfig[0].MedHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedHP : Envir.Random.Next(Settings.ShieldConfig[0].MaxHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxHP : (byte)0;
-                        item.HP = (byte)Math.Min(byte.MaxValue, item.HP + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinMP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinMP : Envir.Random.Next(Settings.ShieldConfig[0].MedMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedMP : Envir.Random.Next(Settings.ShieldConfig[0].MaxMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxMP : (byte)0;
-                        item.MP = (byte)Math.Min(byte.MaxValue, item.MP + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinAC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinAC : Envir.Random.Next(Settings.ShieldConfig[0].MedACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedAC : Envir.Random.Next(Settings.ShieldConfig[0].MaxACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxAC : (byte)0;
-                        item.AC = (byte)Math.Min(byte.MaxValue, item.AC + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinAMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinAMC : Envir.Random.Next(Settings.ShieldConfig[0].MedAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedAMC : Envir.Random.Next(Settings.ShieldConfig[0].MaxAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxAMC : (byte)0;
-                        item.MAC = (byte)Math.Min(byte.MaxValue, item.MAC + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinAcc > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinAcc : Envir.Random.Next(Settings.ShieldConfig[0].MedAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedAcc : Envir.Random.Next(Settings.ShieldConfig[0].MaxAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxAcc : (byte)0;
-                        item.Accuracy = (byte)Math.Min(byte.MaxValue, item.Accuracy + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinAgil > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinAgil : Envir.Random.Next(Settings.ShieldConfig[0].MedAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedAgil : Envir.Random.Next(Settings.ShieldConfig[0].MaxAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxAgil : (byte)0;
-                        item.Agility = (byte)Math.Min(byte.MaxValue, item.Agility + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinCritDmg > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinCritDmg : Envir.Random.Next(Settings.ShieldConfig[0].MedCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedCritDmg : Envir.Random.Next(Settings.ShieldConfig[0].MaxCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxCritDmg : (byte)0;
-                        item.CriticalDamage = (byte)Math.Min(byte.MaxValue, item.CriticalDamage + tmp);
-                    }
-                    if (Settings.ShieldConfig[0].MinCrit > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[0].MinCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MinCrit : Envir.Random.Next(Settings.ShieldConfig[0].MedCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MedCrit : Envir.Random.Next(Settings.ShieldConfig[0].MaxCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[0].MaxCrit : (byte)0;
-                        item.CriticalRate = (byte)Math.Min(byte.MaxValue, item.CriticalRate + tmp);
-                    }
-                    break;
-                case ItemGrade.Rare:
-                    if (Settings.ShieldConfig[1].MinDC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinDC : Envir.Random.Next(Settings.ShieldConfig[1].MedDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedDC : Envir.Random.Next(Settings.ShieldConfig[1].MaxDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxDC : (byte)0;
-                        item.DC = (byte)Math.Min(byte.MaxValue, item.DC + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinMC : Envir.Random.Next(Settings.ShieldConfig[1].MedMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedMC : Envir.Random.Next(Settings.ShieldConfig[1].MaxMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxMC : (byte)0;
-                        item.MC = (byte)Math.Min(byte.MaxValue, item.MC + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinSC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinSC : Envir.Random.Next(Settings.ShieldConfig[1].MedSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedSC : Envir.Random.Next(Settings.ShieldConfig[1].MaxSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxSC : (byte)0;
-                        item.SC = (byte)Math.Min(byte.MaxValue, item.SC + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinHP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinHP : Envir.Random.Next(Settings.ShieldConfig[1].MedHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedHP : Envir.Random.Next(Settings.ShieldConfig[1].MaxHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxHP : (byte)0;
-                        item.HP = (byte)Math.Min(byte.MaxValue, item.HP + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinMP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinMP : Envir.Random.Next(Settings.ShieldConfig[1].MedMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedMP : Envir.Random.Next(Settings.ShieldConfig[1].MaxMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxMP : (byte)0;
-                        item.MP = (byte)Math.Min(byte.MaxValue, item.MP + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinAC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinAC : Envir.Random.Next(Settings.ShieldConfig[1].MedACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedAC : Envir.Random.Next(Settings.ShieldConfig[1].MaxACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxAC : (byte)0;
-                        item.AC = (byte)Math.Min(byte.MaxValue, item.AC + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinAMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinAMC : Envir.Random.Next(Settings.ShieldConfig[1].MedAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedAMC : Envir.Random.Next(Settings.ShieldConfig[1].MaxAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxAMC : (byte)0;
-                        item.MAC = (byte)Math.Min(byte.MaxValue, item.MAC + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinAcc > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinAcc : Envir.Random.Next(Settings.ShieldConfig[1].MedAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedAcc : Envir.Random.Next(Settings.ShieldConfig[1].MaxAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxAcc : (byte)0;
-                        item.Accuracy = (byte)Math.Min(byte.MaxValue, item.Accuracy + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinAgil > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinAgil : Envir.Random.Next(Settings.ShieldConfig[1].MedAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedAgil : Envir.Random.Next(Settings.ShieldConfig[1].MaxAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxAgil : (byte)0;
-                        item.Agility = (byte)Math.Min(byte.MaxValue, item.Agility + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinCritDmg > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinCritDmg : Envir.Random.Next(Settings.ShieldConfig[1].MedCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedCritDmg : Envir.Random.Next(Settings.ShieldConfig[1].MaxCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxCritDmg : (byte)0;
-                        item.CriticalDamage = (byte)Math.Min(byte.MaxValue, item.CriticalDamage + tmp);
-                    }
-                    if (Settings.ShieldConfig[1].MinCrit > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[1].MinCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MinCrit : Envir.Random.Next(Settings.ShieldConfig[1].MedCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MedCrit : Envir.Random.Next(Settings.ShieldConfig[1].MaxCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[1].MaxCrit : (byte)0;
-                        item.CriticalRate = (byte)Math.Min(byte.MaxValue, item.CriticalRate + tmp);
-                    }
-                    break;
-                case ItemGrade.Legendary:
-                    if (Settings.ShieldConfig[2].MinDC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinDC : Envir.Random.Next(Settings.ShieldConfig[2].MedDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedDC : Envir.Random.Next(Settings.ShieldConfig[2].MaxDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxDC : (byte)0;
-                        item.DC = (byte)Math.Min(byte.MaxValue, item.DC + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinMC : Envir.Random.Next(Settings.ShieldConfig[2].MedMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedMC : Envir.Random.Next(Settings.ShieldConfig[2].MaxMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxMC : (byte)0;
-                        item.MC = (byte)Math.Min(byte.MaxValue, item.MC + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinSC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinSC : Envir.Random.Next(Settings.ShieldConfig[2].MedSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedSC : Envir.Random.Next(Settings.ShieldConfig[2].MaxSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxSC : (byte)0;
-                        item.SC = (byte)Math.Min(byte.MaxValue, item.SC + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinHP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinHP : Envir.Random.Next(Settings.ShieldConfig[2].MedHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedHP : Envir.Random.Next(Settings.ShieldConfig[2].MaxHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxHP : (byte)0;
-                        item.HP = (byte)Math.Min(byte.MaxValue, item.HP + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinMP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinMP : Envir.Random.Next(Settings.ShieldConfig[2].MedMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedMP : Envir.Random.Next(Settings.ShieldConfig[2].MaxMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxMP : (byte)0;
-                        item.MP = (byte)Math.Min(byte.MaxValue, item.MP + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinAC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinAC : Envir.Random.Next(Settings.ShieldConfig[2].MedACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedAC : Envir.Random.Next(Settings.ShieldConfig[2].MaxACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxAC : (byte)0;
-                        item.AC = (byte)Math.Min(byte.MaxValue, item.AC + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinAMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinAMC : Envir.Random.Next(Settings.ShieldConfig[2].MedAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedAMC : Envir.Random.Next(Settings.ShieldConfig[2].MaxAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxAMC : (byte)0;
-                        item.MAC = (byte)Math.Min(byte.MaxValue, item.MAC + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinAcc > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinAcc : Envir.Random.Next(Settings.ShieldConfig[2].MedAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedAcc : Envir.Random.Next(Settings.ShieldConfig[2].MaxAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxAcc : (byte)0;
-                        item.Accuracy = (byte)Math.Min(byte.MaxValue, item.Accuracy + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinAgil > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinAgil : Envir.Random.Next(Settings.ShieldConfig[2].MedAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedAgil : Envir.Random.Next(Settings.ShieldConfig[2].MaxAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxAgil : (byte)0;
-                        item.Agility = (byte)Math.Min(byte.MaxValue, item.Agility + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinCritDmg > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinCritDmg : Envir.Random.Next(Settings.ShieldConfig[2].MedCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedCritDmg : Envir.Random.Next(Settings.ShieldConfig[2].MaxCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxCritDmg : (byte)0;
-                        item.CriticalDamage = (byte)Math.Min(byte.MaxValue, item.CriticalDamage + tmp);
-                    }
-                    if (Settings.ShieldConfig[2].MinCrit > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[2].MinCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MinCrit : Envir.Random.Next(Settings.ShieldConfig[2].MedCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MedCrit : Envir.Random.Next(Settings.ShieldConfig[2].MaxCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[2].MaxCrit : (byte)0;
-                        item.CriticalRate = (byte)Math.Min(byte.MaxValue, item.CriticalRate + tmp);
-                    }
-                    break;
-                case ItemGrade.Mythical:
-                    if (Settings.ShieldConfig[3].MinDC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinDC : Envir.Random.Next(Settings.ShieldConfig[3].MedDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedDC : Envir.Random.Next(Settings.ShieldConfig[3].MaxDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxDC : (byte)0;
-                        item.DC = (byte)Math.Min(byte.MaxValue, item.DC + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinMC : Envir.Random.Next(Settings.ShieldConfig[3].MedMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedMC : Envir.Random.Next(Settings.ShieldConfig[3].MaxMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxMC : (byte)0;
-                        item.MC = (byte)Math.Min(byte.MaxValue, item.MC + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinSC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinSC : Envir.Random.Next(Settings.ShieldConfig[3].MedSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedSC : Envir.Random.Next(Settings.ShieldConfig[3].MaxSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxSC : (byte)0;
-                        item.SC = (byte)Math.Min(byte.MaxValue, item.SC + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinHP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinHP : Envir.Random.Next(Settings.ShieldConfig[3].MedHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedHP : Envir.Random.Next(Settings.ShieldConfig[3].MaxHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxHP : (byte)0;
-                        item.HP = (byte)Math.Min(byte.MaxValue, item.HP + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinMP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinMP : Envir.Random.Next(Settings.ShieldConfig[3].MedMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedMP : Envir.Random.Next(Settings.ShieldConfig[3].MaxMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxMP : (byte)0;
-                        item.MP = (byte)Math.Min(byte.MaxValue, item.MP + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinAC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinAC : Envir.Random.Next(Settings.ShieldConfig[3].MedACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedAC : Envir.Random.Next(Settings.ShieldConfig[3].MaxACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxAC : (byte)0;
-                        item.AC = (byte)Math.Min(byte.MaxValue, item.AC + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinAMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinAMC : Envir.Random.Next(Settings.ShieldConfig[3].MedAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedAMC : Envir.Random.Next(Settings.ShieldConfig[3].MaxAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxAMC : (byte)0;
-                        item.MAC = (byte)Math.Min(byte.MaxValue, item.MAC + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinAcc > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinAcc : Envir.Random.Next(Settings.ShieldConfig[3].MedAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedAcc : Envir.Random.Next(Settings.ShieldConfig[3].MaxAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxAcc : (byte)0;
-                        item.Accuracy = (byte)Math.Min(byte.MaxValue, item.Accuracy + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinAgil > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinAgil : Envir.Random.Next(Settings.ShieldConfig[3].MedAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedAgil : Envir.Random.Next(Settings.ShieldConfig[3].MaxAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxAgil : (byte)0;
-                        item.Agility = (byte)Math.Min(byte.MaxValue, item.Agility + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinCritDmg > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinCritDmg : Envir.Random.Next(Settings.ShieldConfig[3].MedCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedCritDmg : Envir.Random.Next(Settings.ShieldConfig[3].MaxCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxCritDmg : (byte)0;
-                        item.CriticalDamage = (byte)Math.Min(byte.MaxValue, item.CriticalDamage + tmp);
-                    }
-                    if (Settings.ShieldConfig[3].MinCrit > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[3].MinCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MinCrit : Envir.Random.Next(Settings.ShieldConfig[3].MedCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MedCrit : Envir.Random.Next(Settings.ShieldConfig[3].MaxCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[3].MaxCrit : (byte)0;
-                        item.CriticalRate = (byte)Math.Min(byte.MaxValue, item.CriticalRate + tmp);
-                    }
-                    break;
-                case ItemGrade.Elite:
-                    if (Settings.ShieldConfig[4].MinDC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinDC : Envir.Random.Next(Settings.ShieldConfig[4].MedDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedDC : Envir.Random.Next(Settings.ShieldConfig[4].MaxDCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxDC : (byte)0;
-                        item.DC = (byte)Math.Min(byte.MaxValue, item.DC + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinMC : Envir.Random.Next(Settings.ShieldConfig[4].MedMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedMC : Envir.Random.Next(Settings.ShieldConfig[4].MaxMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxMC : (byte)0;
-                        item.MC = (byte)Math.Min(byte.MaxValue, item.MC + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinSC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinSC : Envir.Random.Next(Settings.ShieldConfig[4].MedSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedSC : Envir.Random.Next(Settings.ShieldConfig[4].MaxSCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxSC : (byte)0;
-                        item.SC = (byte)Math.Min(byte.MaxValue, item.SC + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinHP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinHP : Envir.Random.Next(Settings.ShieldConfig[4].MedHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedHP : Envir.Random.Next(Settings.ShieldConfig[4].MaxHPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxHP : (byte)0;
-                        item.HP = (byte)Math.Min(byte.MaxValue, item.HP + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinMP > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinMP : Envir.Random.Next(Settings.ShieldConfig[4].MedMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedMP : Envir.Random.Next(Settings.ShieldConfig[4].MaxMPRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxMP : (byte)0;
-                        item.MP = (byte)Math.Min(byte.MaxValue, item.MP + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinAC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinAC : Envir.Random.Next(Settings.ShieldConfig[4].MedACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedAC : Envir.Random.Next(Settings.ShieldConfig[4].MaxACRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxAC : (byte)0;
-                        item.AC = (byte)Math.Min(byte.MaxValue, item.AC + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinAMC > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinAMC : Envir.Random.Next(Settings.ShieldConfig[4].MedAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedAMC : Envir.Random.Next(Settings.ShieldConfig[4].MaxAMCRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxAMC : (byte)0;
-                        item.MAC = (byte)Math.Min(byte.MaxValue, item.MAC + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinAcc > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinAcc : Envir.Random.Next(Settings.ShieldConfig[4].MedAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedAcc : Envir.Random.Next(Settings.ShieldConfig[4].MaxAccRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxAcc : (byte)0;
-                        item.Accuracy = (byte)Math.Min(byte.MaxValue, item.Accuracy + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinAgil > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinAgil : Envir.Random.Next(Settings.ShieldConfig[4].MedAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedAgil : Envir.Random.Next(Settings.ShieldConfig[4].MaxAgilRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxAgil : (byte)0;
-                        item.Agility = (byte)Math.Min(byte.MaxValue, item.Agility + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinCritDmg > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinCritDmg : Envir.Random.Next(Settings.ShieldConfig[4].MedCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedCritDmg : Envir.Random.Next(Settings.ShieldConfig[4].MaxCritDmgRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxCritDmg : (byte)0;
-                        item.CriticalDamage = (byte)Math.Min(byte.MaxValue, item.CriticalDamage + tmp);
-                    }
-                    if (Settings.ShieldConfig[4].MinCrit > 0)
-                    {
-                        tmp = Envir.Random.Next(Settings.ShieldConfig[4].MinCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MinCrit : Envir.Random.Next(Settings.ShieldConfig[4].MedCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MedCrit : Envir.Random.Next(Settings.ShieldConfig[4].MaxCritRate) == 0 ?
-                            (byte)Settings.ShieldConfig[4].MaxCrit : (byte)0;
-                        item.CriticalRate = (byte)Math.Min(byte.MaxValue, item.CriticalRate + tmp);
-                    }
-                    break;
-            }
-
-            return item;
-        }
-
-        private void SetShieldEXPS()
-        {
-            UserItem item;
-            for (int i = 0; i < Info.Inventory.Length; i++)
-            {
-                if (Info.Inventory[i] != null &&
-                    Info.Inventory[i].Info.Type == ItemType.Shield)
-                {
-                    item = Info.Inventory[i];
-                    switch (item.Info.Grade)
-                    {
-                        case ItemGrade.Common:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.CommonShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Rare:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.RareShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Legendary:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.LegendaryShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Mythical:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.MythicalShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                    }
-                }
-            }
-
-            for (int i = 0; i < Info.Equipment.Length; i++)
-            {
-                if (Info.Equipment[i] != null &&
-                    Info.Equipment[i].Info.Type == ItemType.Shield)
-                {
-                    item = Info.Equipment[i];
-                    switch (item.Info.Grade)
-                    {
-                        case ItemGrade.Common:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.CommonShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Rare:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.RareShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Legendary:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.LegendaryShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                        case ItemGrade.Mythical:
-                            if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                item.NeedShieldExp = Settings.MythicalShieldEXP[item.ShieldLevel];
-                            else
-                                item.NeedShieldExp = 0;
-                            break;
-                    }
-                }
-            }
-        }
-
-        public void UpgradeShield(int amount, bool useRandom = false)
-        {
-            //  Check we can upgrade it first.
-            if (CanUpgradeShield())
-            {
-                //  Get the shield from players equipment.
-                UserItem item = Info.Equipment[(int)EquipmentSlot.Shield];
-                //  Ensure it's valid
-                if (item != null)
-                {
-                    int random = 0;
-                    //  Randomise the EXP
-                    if (useRandom)
-                        random = Envir.Random.Next(amount);
-                    else
-                        random = amount;
-                    //  Switch between the shields grade
-                    switch (item.Info.Grade)
-                    {
-                        case ItemGrade.Common:
-                            //  if EXP is more or equal to the need'd exp
-                            if (item.ShieldExp + random >= Settings.CommonShieldEXP[item.ShieldLevel])
-                            {
-                                item.ShieldExp -= Settings.CommonShieldEXP[item.ShieldLevel];
-                                //  if EXP is equal to 0 (ensure we're not going in to minus)
-                                if (item.ShieldExp < 0)
-                                    item.ShieldExp = 0;
-                                //  Increase the Shields level.
-                                item.ShieldLevel++;
-                                if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                    item.NeedShieldExp = Settings.CommonShieldEXP[item.ShieldLevel];
-                                else
-                                    item.NeedShieldExp = 0;
-                                item = UpgradeRandomShieldStat(item);
-                            }
-                            else
-                                //  We can't level it, so increase the exp.           
-                                item.ShieldExp += random;
-                            break;
-                        case ItemGrade.Rare:
-                            if (item.ShieldExp + random >= Settings.RareShieldEXP[item.ShieldLevel])
-                            {
-                                item.ShieldExp -= Settings.RareShieldEXP[item.ShieldLevel];
-                                if (item.ShieldExp < 0)
-                                    item.ShieldExp = 0;
-                                //  Increase the Shields level.
-                                item.ShieldLevel++;
-                                if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                    item.NeedShieldExp = Settings.RareShieldEXP[item.ShieldLevel];
-                                else
-                                    item.NeedShieldExp = 0;
-                                item = UpgradeRandomShieldStat(item);
-                            }
-                            //  if EXP is equal to 0 (ensure we're not going in to minus)
-                            else
-                                //  We can't level it, so increase the exp.           
-                                item.ShieldExp += random;
-                            break;
-                        case ItemGrade.Legendary:
-                            if (item.ShieldExp + random >= Settings.LegendaryShieldEXP[item.ShieldLevel])
-                            {
-                                item.ShieldExp -= Settings.LegendaryShieldEXP[item.ShieldLevel];
-                                if (item.ShieldExp < 0)
-                                    item.ShieldExp = 0;
-                                //  Increase the Shields level.
-                                item.ShieldLevel++;
-                                if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                    item.NeedShieldExp = Settings.LegendaryShieldEXP[item.ShieldLevel];
-                                else
-                                    item.NeedShieldExp = 0;
-                                item = UpgradeRandomShieldStat(item);
-                            }
-                            //  if EXP is equal to 0 (ensure we're not going in to minus)
-                            else
-                                //  We can't level it, so increase the exp.           
-                                item.ShieldExp += random;
-                            break;
-                        case ItemGrade.Mythical:
-                            if (item.ShieldExp + random >= Settings.MythicalShieldEXP[item.ShieldLevel])
-                            {
-                                item.ShieldExp -= Settings.MythicalShieldEXP[item.ShieldLevel];
-                                if (item.ShieldExp < 0)
-                                    item.ShieldExp = 0;
-                                item.ShieldLevel++;
-                                if (item.ShieldLevel < Settings.MaxShieldLevel)
-                                    item.NeedShieldExp = Settings.MythicalShieldEXP[item.ShieldLevel];
-                                else
-                                    item.NeedShieldExp = 0;
-                                item = UpgradeRandomShieldStat(item);
-                            }
-                            //  if EXP is equal to 0 (ensure we're not going in to minus)
-                            else
-                                //  We can't level it, so increase the exp.           
-                                item.ShieldExp += random;
-                            break;
-                    }
-                    Info.Equipment[(int)EquipmentSlot.Shield] = item;
-                    Enqueue(new S.RefreshItem { Item = item });
-                }
-            }
-            SetShieldEXPS();
-        }
-
-        public bool CanUpgradeShield()
-        {
-            if (Info.Equipment[(int)EquipmentSlot.Shield] != null)
-            {
-                UserItem item = Info.Equipment[(int)EquipmentSlot.Shield];
-                if (item != null)
-                {
-                    if (item.ShieldLevel >= Settings.MaxShieldLevel)
-                        return false;
-                    else
-                        return true;
-                }
-            }
-            return false;
-        }
-
         private void StartGameSuccess()
         {
             Connection.Stage = GameStage.Game;
@@ -3611,7 +2910,7 @@ namespace Server.MirObjects
                 }
             }
 
-            MaxHP = (ushort)Math.Min(ushort.MaxValue, (((double)HPrate / 100) + 50000) * MaxHP);
+            MaxHP = (ushort)Math.Min(ushort.MaxValue, (((double)HPrate / 100) + 1) * MaxHP);
             MaxMP = (ushort)Math.Min(ushort.MaxValue, (((double)MPrate / 100) + 1) * MaxMP);
             MaxAC = (ushort)Math.Min(ushort.MaxValue, (((double)Acrate / 100) + 1) * MaxAC);
             MaxMAC = (ushort)Math.Min(ushort.MaxValue, (((double)Macrate / 100) + 1) * MaxMAC);
@@ -4081,12 +3380,15 @@ namespace Server.MirObjects
                     case BuffType.Exp:
                     case BuffType.StarterExp:
                         ExpRateOffset = (float)Math.Min(float.MaxValue, ExpRateOffset + buff.Values[0]);
+                        ReceiveChat("[ExpRate]: You have been buffed by [{0}%]", ChatType.Hint);
                         break;
                     case BuffType.Drop:
                         ItemDropRateOffset = (float)Math.Min(float.MaxValue, ItemDropRateOffset + buff.Values[0]);
+                        ReceiveChat("[DropRate]: You have been buffed by [{0}%]", ChatType.Hint);
                         break;
                     case BuffType.Gold:
                         GoldDropRateOffset = (float)Math.Min(float.MaxValue, GoldDropRateOffset + buff.Values[0]);
+                        ReceiveChat("[GoldRate]: You have been buffed by [{0}%]", ChatType.Hint);
                         break;
                     case BuffType.Knapsack:
                     case BuffType.BagWeight:
@@ -4271,20 +3573,20 @@ namespace Server.MirObjects
         {
             if (string.IsNullOrEmpty(message)) return;
 
-            SMain.EnqueueChat(string.Format("{0}: {1}", Name, message));
+            SMain.EnqueueChat(string.Format("[{0}]: [{1}]", Name, message));
 
             if (GMLogin)
             {
                 if (message == GMPassword)
                 {
                     IsGM = true;
-                    SMain.Enqueue(string.Format("{0} is now a GM", Name));
+                    SMain.Enqueue(string.Format("[{0}] is now a GM", Name));
                     ReceiveChat("You have been made a GM", ChatType.System);
                     Envir.RemoveRank(Info);//remove gm chars from ranking to avoid causing bugs in rank list
                 }
                 else
                 {
-                    SMain.Enqueue(string.Format("{0} attempted a GM login", Name));
+                    SMain.Enqueue(string.Format("[{0}] attempted a GM login", Name));
                     ReceiveChat("Incorrect login password", ChatType.System);
                 }
                 GMLogin = false;
@@ -4361,14 +3663,14 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("/{0}", message), ChatType.WhisperOut);
-                player.ReceiveChat(string.Format("[{0}]=>{1}", Name, message.Remove(0, parts[0].Length)), ChatType.WhisperIn);
+                ReceiveChat(string.Format("/[{0}]", message), ChatType.WhisperOut);
+                player.ReceiveChat(string.Format("[{0}]=>[{1}]", Name, message.Remove(0, parts[0].Length)), ChatType.WhisperIn);
             }
             else if (message.StartsWith("!!"))
             {
                 if (GroupMembers == null) return;
                 //Group
-                message = String.Format("{0}:{1}", Name, message.Remove(0, 2));
+                message = String.Format("[{0}]:[{1}]", Name, message.Remove(0, 2));
 
                 p = new S.ObjectChat { ObjectID = ObjectID, Text = message, Type = ChatType.Group };
 
@@ -4381,7 +3683,7 @@ namespace Server.MirObjects
 
                 //Guild
                 message = message.Remove(0, 2);
-                MyGuild.SendMessage(String.Format("{0}:{1}", Name, message));
+                MyGuild.SendMessage(String.Format("[{0}]: [{1}]", Name, message));
 
             }
             else if (message.StartsWith("!#"))
@@ -4403,8 +3705,8 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("[{0}]:{1}", Name, message), ChatType.Mentor);
-                player.ReceiveChat(string.Format("[{0}]:{1}", Name, message), ChatType.Mentor);
+                ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Mentor);
+                player.ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Mentor);
             }
             else if (message.StartsWith("!"))
             {
@@ -4421,7 +3723,7 @@ namespace Server.MirObjects
                 }
 
                 ShoutTime = Envir.Time + 10000;
-                message = String.Format("(!)[{0}]:{1}", Name, message.Remove(0, 1));
+                message = String.Format("(!)[{0}]:[{1}]", Name, message.Remove(0, 1));
 
                 if (HasMapShout)
                 {
@@ -4477,8 +3779,8 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("{0}: {1}", Name, message), ChatType.Relationship);
-                player.ReceiveChat(string.Format("{0}: {1}", Name, message), ChatType.Relationship);
+                ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Relationship);
+                player.ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Relationship);
             }
             else if (message.StartsWith("@!"))
             {
@@ -4506,6 +3808,11 @@ namespace Server.MirObjects
 
                 switch (parts[0].ToUpper())
                 {
+                    case "LOGINHGHG":
+                        GMLogin = true;
+                        ReceiveChat("Please type the GM Password", ChatType.Hint);
+                        return;
+
                     case "KILL":
                         if (!IsGM) return;
 
@@ -4657,8 +3964,7 @@ namespace Server.MirObjects
                                 item = Envir.CreateDropItem(iInfo);
                                 item.Count = count;
 
-                                if (CanGainItem(item, false))
-                                    GainItem(item);
+                                if (CanGainItem(item, false)) GainItem(item);
 
                                 return;
                             }
@@ -4936,10 +4242,9 @@ namespace Server.MirObjects
                     case "MAP":
                         if (!IsGM) return;
 
-                        var mapCoords = Functions.PointToString(CurrentLocation);
                         var mapName = CurrentMap.Info.FileName;
                         var mapTitle = CurrentMap.Info.Title;
-                        ReceiveChat((string.Format("You are currently in [{0}]. Map ID: [{1}] Coords [{2}].", mapTitle, mapName, mapCoords)), ChatType.System);
+                        ReceiveChat((string.Format("You are currently in [{0}]. Map ID: [{1}]", mapTitle, mapName)), ChatType.System);
                         break;
 
                     case "SAVEPLAYER":
@@ -5378,7 +4683,7 @@ namespace Server.MirObjects
 
                         if (Envir.Time < LastProbeTime)
                         {
-                            ReceiveChat(string.Format("You cannot search for another [{0}] seconds", (LastProbeTime - Envir.Time) / 1000), ChatType.System);
+                            ReceiveChat(string.Format("You cannot search for another [[{0}]] seconds", (LastProbeTime - Envir.Time) / 1000), ChatType.System);
                             return;
                         }
 
@@ -5943,7 +5248,7 @@ namespace Server.MirObjects
                         player.GetCompletedQuests();
                         break;
 
-                        //moha 
+                        //moha // moha
 
                     case "PauseBuffs":
                         Buff bb = Buffs.FirstOrDefault(e => e.Type == BuffType.Drop);
@@ -6030,7 +5335,7 @@ namespace Server.MirObjects
                             tempConq.AttackerID = MyGuild.Guildindex;
                         }
                         else return;
-                        ReceiveChat(string.Format("[{0}] War Started.", tempConq.Info.Name), ChatType.Announcement);
+                        ReceiveChat(string.Format("[{0}] War Started.", tempConq.Info.Name), ChatType.System);
                         SMain.Enqueue(string.Format("[{0}] War Started.", tempConq.Info.Name));
                         break;
                     case "RESETCONQUEST":
@@ -6242,7 +5547,7 @@ namespace Server.MirObjects
             }
             else
             {
-                message = String.Format("{0}:{1}", CurrentMap.Info.NoNames ? "?????" : Name, message);
+                message = String.Format("[{0}]:[{1}]", CurrentMap.Info.NoNames ? "?????" : Name, message);
 
                 p = new S.ObjectChat { ObjectID = ObjectID, Text = message, Type = ChatType.Normal };
 
@@ -6250,7 +5555,8 @@ namespace Server.MirObjects
                 Broadcast(p);
             }
         }
-        
+
+
         public void Turn(MirDirection dir)
         {
             _stepCounter = 0;
@@ -6273,7 +5579,7 @@ namespace Server.MirObjects
                 else
                     InSafeZone = false;
 
-                /*Cell cell = CurrentMap.GetCell(CurrentLocation);
+                Cell cell = CurrentMap.GetCell(CurrentLocation);
 
                 for (int i = 0; i < cell.Objects.Count; i++)
                 {
@@ -6282,7 +5588,7 @@ namespace Server.MirObjects
 
                     ob.ProcessSpell(this);
                     //break;
-                }*/
+                }
 
                 if (TradePartner != null)
                     TradeCancel();
@@ -6697,8 +6003,8 @@ namespace Server.MirObjects
             if (Info.Equipment[(int)EquipmentSlot.Weapon] == null) return;
             ItemInfo RealItem = Functions.GetRealItem(Info.Equipment[(int)EquipmentSlot.Weapon].Info, Info.Level, Info.Class, Envir.ItemInfoList);
 
-            // if ((RealItem.Shape / 100) != 2) return; // Weapon Update Test CancelRangeSword
-            if ((RealItem.Shape / 272) != 2) return;
+            // if ((RealItem.Shape / 100) != 2) return; // Weapon Update Test
+            if ((RealItem.Shape / 1000) != 2) return;
             if (Functions.InRange(CurrentLocation, location, Globals.MaxAttackRange) == false) return;
 
             MapObject target = null;
@@ -11343,25 +10649,25 @@ namespace Server.MirObjects
             if (b.Visible) Broadcast(addBuff);
 
             RefreshStats();
-        } 
-               public void PauseBuff(Buff b)
-                 {
-                     if (b == null) return;
-         
-                     if (b.Paused) return;
-         
-                     b.ExpireTime = b.ExpireTime - Envir.Time;
-                     b.Paused = true;
-                     Enqueue(new S.RemoveBuff { Type = b.Type, ObjectID = ObjectID });
-                 }
-                 public void UnpauseBuff(Buff b)
-                 {
-                     if (!b.Paused) return;
-         
-                     b.ExpireTime = b.ExpireTime + Envir.Time;
-                     b.Paused = false;
-                     Enqueue(new S.AddBuff { Type = b.Type, Caster = Name, Expire = b.ExpireTime - Envir.Time, Values = b.Values, Infinite = b.Infinite, ObjectID = ObjectID, Visible = b.Visible });
-                 }
+        }
+        public void PauseBuff(Buff b)
+        {
+            if (b == null) return;
+
+            if (b.Paused) return;
+
+            b.ExpireTime = b.ExpireTime - Envir.Time;
+            b.Paused = true;
+            Enqueue(new S.RemoveBuff { Type = b.Type, ObjectID = ObjectID });
+        }
+        public void UnpauseBuff(Buff b)
+        {
+            if (!b.Paused) return;
+
+            b.ExpireTime = b.ExpireTime + Envir.Time;
+            b.Paused = false;
+            Enqueue(new S.AddBuff { Type = b.Type, Caster = Name, Expire = b.ExpireTime - Envir.Time, Values = b.Values, Infinite = b.Infinite, ObjectID = ObjectID, Visible = b.Visible });
+        }
 
         public void EquipSlotItem(MirGridType grid, ulong id, int to, MirGridType gridTo)
         {
@@ -11377,9 +10683,6 @@ namespace Server.MirObjects
                 case MirGridType.Fishing:
                     Item = Info.Equipment[(int)EquipmentSlot.Weapon];
                     break;
-                // case MirGridType.Equipment:
-                //     Item = Info.Equipment[(int)EquipmentSlot.Stone];
-                //     break;
                 default:
                     Enqueue(p);
                     return;
@@ -12783,7 +12086,6 @@ namespace Server.MirObjects
                 case 5: //SpecialHammer
                 case 6: //SpecialSewingSupplies
 
-
                     if (tempTo.Info.Bind.HasFlag(BindMode.DontRepair))
                     {
                         Enqueue(p);
@@ -12930,24 +12232,6 @@ namespace Server.MirObjects
                             case StatType.PoisonRegen:
                                 successchance *= (int)tempTo.PoisonRecovery;
                                 break;
-                            
-                            //
-                            // case StatType HP_Percent:
-                            //     successchance *= (int)tempTo.PoisonRecovery;
-                            //     break;
-                            //
-                            //
-                            // case StatType.MP_Percent:
-                            //     successchance *= (int)tempTo.PoisonRecovery;
-                            //     break;
-
-
-                            
-                            case StatType.HP_Percent:
-                                successchance *= (int)tempTo.Info.Grade;
-                                break;
-                            
-                            
 
 
                             /*
@@ -13056,13 +12340,6 @@ namespace Server.MirObjects
                     else if ((tempFrom.Info.Luck + tempFrom.Luck) > 0)
                     {
                         if (succeeded) tempTo.Luck = (sbyte)Math.Min(sbyte.MaxValue, tempFrom.Info.Luck + tempTo.Luck + tempFrom.Luck);
-                    }
-                    else if (((int)tempFrom.Info.Grade) > 0)
-                    {
-                        if (succeeded)
-                        {
-                            tempTo.Info.Grade = (ItemGrade)Math.Min(sbyte.MaxValue, (int)tempFrom.Info.Grade + (int)tempTo.Info.Grade + (int)tempFrom.Info.Grade);
-                        }
                     }
                     else
                     {
@@ -16179,7 +15456,7 @@ namespace Server.MirObjects
                 }
             }
         }
-            // resert and upgrade
+
         public void ResetAddedItem(ulong UniqueID)
         {
             if (NPCPage == null || !String.Equals(NPCPage.Key, NPCObject.ResetKey, StringComparison.CurrentCultureIgnoreCase))

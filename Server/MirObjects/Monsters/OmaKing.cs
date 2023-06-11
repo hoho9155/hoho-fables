@@ -161,35 +161,9 @@ namespace Server.MirObjects.Monsters
             }
         }
 
-        private void H25Attack()
-        {
-            if (Health >= 25) return;
-            bool ranged = CurrentLocation == Target.CurrentLocation || !InAttackRange();
-
-            if (!ranged && Envir.Random.Next(Settings.PoisonResistWeight) >= Target.PoisonResist)
-            {
-                int poison = GetAttackPower(MinSC, MaxSC);
-
-                Target.ApplyPoison(new Poison
-                {
-                    Owner = this,
-                    Duration = 5,
-                    PType = PoisonType.Green,
-                    Value = poison,
-                    TickSpeed = 2000
-                }, this);
-            }
-        }
-
         protected override void ProcessTarget()
         {
             if (Target == null) return;
-
-            if (InRangedAttackRange() && CanAttack && Health < 25)
-            {
-                H25Attack();
-                return;
-            }
 
             if (InRangedAttackRange() && CanAttack)
             {

@@ -95,8 +95,8 @@ namespace Client
         public static bool FullScreen = true, TopMost = true;
         public static string FontName = "Segoe UI"; //"MS Sans Serif"
         public static bool FPSCap = true;
-        public static int MaxFPS = 45;
-        public static int Resolution = 1920;
+        public static int MaxFPS = 30;
+        public static int Resolution = 1366;
         public static bool BorderlessWindow = false;
         public static bool DebugMode = false;
         public static byte MiniMapRadarSize = 2;
@@ -196,9 +196,8 @@ namespace Client
 
 
         //AutoPatcher
-
-        public static bool P_Patcher = false;
-        public static string P_Host = @"http://last-wrongHOST-mir.com/patch/";
+        public static bool P_Patcher = true;
+        public static string P_Host = @"http://fablesofmir.co.uk/client/";
         public static string P_PatchFileName = @"PList.gz";
         public static bool P_NeedLogin = false;
         public static string P_Login = string.Empty;
@@ -246,7 +245,7 @@ namespace Client
             }
         }
         public static void Load()
-        {
+        {            
             if (!Directory.Exists(DataPath)) Directory.CreateDirectory(DataPath);
             if (!Directory.Exists(MapPath)) Directory.CreateDirectory(MapPath);
             if (!Directory.Exists(SoundPath)) Directory.CreateDirectory(SoundPath);
@@ -327,7 +326,7 @@ namespace Client
             FilterGuildChat = Reader.ReadBoolean("Filter", "FilterGuildChat", FilterGuildChat);
 
             //AutoPatcher
-            P_Patcher = Reader.ReadBoolean("Launcher", "False", P_Patcher);
+            P_Patcher = Reader.ReadBoolean("Launcher", "Enabled", P_Patcher);
             P_Host = Reader.ReadString("Launcher", "Host", P_Host);
             P_PatchFileName = Reader.ReadString("Launcher", "PatchFile", P_PatchFileName);
             P_NeedLogin = Reader.ReadBoolean("Launcher", "NeedLogin", P_NeedLogin);
