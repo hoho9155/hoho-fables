@@ -1,0 +1,11 @@
+H:\WIP Files\Library\LibraryEditor.exe.config
+H:\WIP Files\Library\LibraryEditor.exe
+H:\WIP Files\Library\LibraryEditor.pdb
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.LMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\Library_Editor.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.exe
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Release\LibraryEditor.pdb

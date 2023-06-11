@@ -1,0 +1,17 @@
+H:\WIP Files\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+H:\WIP Files\AutoPatcherAdmin\AutoPatcherAdmin.exe
+H:\WIP Files\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-08-11)\AutoPatcherAdmin\obj\Release\AutoPatcherAdmin.pdb

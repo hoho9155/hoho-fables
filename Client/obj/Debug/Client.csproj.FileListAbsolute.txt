@@ -1,0 +1,294 @@
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.exe
+H:\WIP Files\Source Code (2018-02-17)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-02-17)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-02-17)\Build\Client\Client.exe.config
+H:\WIP Files\__Source Code (2018-02-17)\Build\Client\Client.exe
+H:\WIP Files\__Source Code (2018-02-17)\Build\Client\Client.pdb
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-04-29)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-05-06)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-05-11)\Client\obj\Debug\Client.pdb
+H:\WIP Files\_Client\Client.exe.config
+H:\WIP Files\_Client\Client.exe
+H:\WIP Files\_Client\Client.pdb
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-08-03\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Debug\Client.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.exe
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.pdb
+H:\WIP Files\__Source Code (2018-08-24)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.CMain.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Launcher.Config.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.exe
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.pdb
+C:\Users\Paul McGinley\Desktop\_Client\Client.exe.config
+C:\Users\Paul McGinley\Desktop\_Client\Client.exe
+C:\Users\Paul McGinley\Desktop\_Client\Client.pdb
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\$Source\$Source Code\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\$Source\$Source Code\Client\obj\Debug\Launcher.AMain.resources
+C:\$Source\$Source Code\Client\obj\Debug\Client.CMain.resources
+C:\$Source\$Source Code\Client\obj\Debug\Launcher.Config.resources
+C:\$Source\$Source Code\Client\obj\Debug\Client.Properties.Resources.resources
+C:\$Source\$Source Code\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\$Source\$Source Code\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\$Source\$Source Code\Client\obj\Debug\Client.exe
+C:\$Source\$Source Code\Client\obj\Debug\Client.pdb
+C:\$Source\$Source Code\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\$Source\$Source Code\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\$Source\$Source Code\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\$Source\$Source Code\Client\obj\Debug\Interop.VBIDE.dll
+C:\$Source\$Source Code\Client\obj\Debug\Interop.VSLangProj.dll
+C:\$Source\$Source Code\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\$Source\$Source Code\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\$SourceFables\$Source Code\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\$SourceFables\$Source Code\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VSLangProj.dll
+C:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\$SourceFables\$Source Code\Client\obj\Debug\Launcher.AMain.resources
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.CMain.resources
+C:\$SourceFables\$Source Code\Client\obj\Debug\Launcher.Config.resources
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.Properties.Resources.resources
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.exe
+C:\$SourceFables\$Source Code\Client\obj\Debug\Client.pdb
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.VBIDE.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.VSLangProj.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.CMain.resources
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Launcher.Config.resources
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.exe
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.pdb
+C:\Users\dell\Desktop\Fables Client\Client.exe.config
+C:\Users\dell\Desktop\Fables Client\Client.exe
+C:\Users\dell\Desktop\Fables Client\Client.pdb
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\dell\Desktop\$Source Code\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+H:\$SourceFables\_Client\Client.exe.config
+H:\$SourceFables\_Client\Client.exe
+H:\$SourceFables\_Client\Client.pdb
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.DXTMSFTLib.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.DXTRANSLib.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VBIDE.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VSLangProj.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VSLangProj2.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Interop.VSTOEE90.dll
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+D:\$SourceFables\$Source Code\Client\obj\Debug\Launcher.AMain.resources
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.CMain.resources
+D:\$SourceFables\$Source Code\Client\obj\Debug\Launcher.Config.resources
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.Properties.Resources.resources
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.exe
+D:\$SourceFables\$Source Code\Client\obj\Debug\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\_ClientCompiled\Client.exe.config
+C:\Users\alatt\OneDrive\Desktop\_ClientCompiled\Client.exe
+C:\Users\alatt\OneDrive\Desktop\_ClientCompiled\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.VBIDE.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.VSLangProj.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.CMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Launcher.Config.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.exe
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Client\obj\Debug\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.VBIDE.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.VSLangProj.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.CMain.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Launcher.Config.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.exe
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Client\obj\Debug\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\_Client_2023\Client.exe.config
+C:\Users\alatt\OneDrive\Desktop\_Client_2023\Client.exe
+C:\Users\alatt\OneDrive\Desktop\_Client_2023\Client.pdb
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+D:\$_Source_2023\Client\obj\Debug\Interop.DXTMSFTLib.dll
+D:\$_Source_2023\Client\obj\Debug\Interop.DXTRANSLib.dll
+D:\$_Source_2023\Client\obj\Debug\Interop.VBIDE.dll
+D:\$_Source_2023\Client\obj\Debug\Interop.VSLangProj.dll
+D:\$_Source_2023\Client\obj\Debug\Interop.VSLangProj2.dll
+D:\$_Source_2023\Client\obj\Debug\Interop.VSTOEE90.dll
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+D:\$_Source_2023\Client\obj\Debug\Launcher.AMain.resources
+D:\$_Source_2023\Client\obj\Debug\Client.CMain.resources
+D:\$_Source_2023\Client\obj\Debug\Launcher.Config.resources
+D:\$_Source_2023\Client\obj\Debug\Client.Properties.Resources.resources
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\$_Source_2023\Client\obj\Debug\Client.csproj.CopyComplete
+D:\$_Source_2023\Client\obj\Debug\Client.exe
+D:\$_Source_2023\Client\obj\Debug\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.VBIDE.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.VSLangProj.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.CMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Launcher.Config.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.exe
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.pdb
+C:\Users\alatt\OneDrive\Desktop\$Fables\Client\obj\Debug\Client.csproj.CopyComplete
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.DXTMSFTLib.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.DXTRANSLib.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.VBIDE.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.VSLangProj.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.VSLangProj2.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Interop.VSTOEE90.dll
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Launcher.AMain.resources
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.CMain.resources
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Launcher.Config.resources
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.Properties.Resources.resources
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.exe
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.pdb
+C:\Users\rwk\_Client_2023\Client.exe.config
+C:\Users\rwk\_Client_2023\Client.exe
+C:\Users\rwk\_Client_2023\Client.pdb
+E:\projects\c# online game\thelastchapter-fables\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\rwk\_Server_2023\Client.exe.config
+C:\Users\rwk\_Server_2023\Client.exe
+C:\Users\rwk\_Server_2023\Client.pdb
+E:\projects\c# online game\_Client_2023\Client.exe.config
+E:\projects\c# online game\_Client_2023\Client.exe
+E:\projects\c# online game\_Client_2023\Client.pdb
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.DXTMSFTLib.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.DXTRANSLib.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.VBIDE.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.VSLangProj.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.VSLangProj2.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Interop.VSTOEE90.dll
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.ResolveComReference.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Launcher.AMain.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.CMain.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Launcher.Config.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.exe
+C:\Users\alatt\source\repos\ShieldsUpdated\Client\obj\Debug\Client.pdb

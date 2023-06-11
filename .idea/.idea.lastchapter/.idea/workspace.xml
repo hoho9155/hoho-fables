@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+    <projectFile>Client/Client.csproj</projectFile>
+    <projectFile>Server/Server.csproj</projectFile>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac4f89a3-676b-4da6-9313-42877d0a7c23" name="Changes" comment="X-drops depending on level works but not grade&#10;X-direction of magic bugged&#10;O-some chats corrected &#10;O- other fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.lastchapter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lastchapter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/KeyBindSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/KeyBindSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirObjects/Frames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirObjects/Frames.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/Dialogs/CharacterDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/Dialogs/CharacterDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/Dialogs/FieldMapDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/Dialogs/FieldMapDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/Dialogs/MainDialogs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/Dialogs/MainDialogs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/GameScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/GameScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/Client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/Client.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirEnvir/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirEnvir/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/NPCObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/NPCObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="46429e2f-5102-4a45-9e39-689801a7a9b2" />
+        <option name="url" value="https://github.com/IHaveALongName/thelastchapter-fables.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4b76c3e709534801a173f34a1d6b3dfc522790/4f/1097f0e7/Byte.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4b76c3e709534801a173f34a1d6b3dfc522790/f9/00cf17c6/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Client/MirScenes/Dialogs/FieldMapDialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/alatt/OneDrive/Desktop/$Fables/Client/MirScenes/Dialogs/MainDialogs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Client/MirScenes/GameScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClientPackets.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Common.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirDatabase/CharacterInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirDatabase/MonsterInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/MapObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/MonsterObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/Monsters/YinDevilNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPackets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Common.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Server/MirDatabase/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Server/MirObjects/PlayerObject.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectId" id="2R3ZcnlEwBteel3JNlfevXlhl8N" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Rider.SolutionAnalysis.ShowIgnored&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.375&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;D:/$LatestFablesSource_GradedMobs/Common.cs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\alatt\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="RiderProblemsViewState">
+    <option name="groupByToolId" value="true" />
+    <hideBySeverity>
+      <option value="15" />
+      <option value="20" />
+      <option value="300" />
+    </hideBySeverity>
+  </component>
+  <component name="RunManager" selected=".NET Project.Client">
+    <configuration name="Client" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_Client_2023/Client.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_Client_2023" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Client/Client.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ClientCFG" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ClientCFG/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ClientCFG/ClientCFG.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MapTileSet" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MapTileSet/MapTileSet.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Unloaded" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_Server_2023/Server.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_Server_2023" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Server/Server.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Client" />
+      <item itemvalue=".NET Project.ClientCFG" />
+      <item itemvalue=".NET Project.MapTileSet" />
+      <item itemvalue=".NET Project.Server" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac4f89a3-676b-4da6-9313-42877d0a7c23" name="Changes" comment="" />
+      <created>1686480818579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686480818579</updated>
+      <workItem from="1686480819913" duration="5779000" />
+      <workItem from="1686486968811" duration="47961000" />
+      <workItem from="1686587757938" duration="39674000" />
+      <workItem from="1686660637866" duration="222000" />
+    </task>
+    <task id="LOCAL-00001" summary="lastchapter's first push!">
+      <created>1686486298365</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686486298365</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first push?">
+      <created>1686487149884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686487149884</updated>
+    </task>
+    <task id="LOCAL-00003" summary="X-drops depending on level works but not grade&#10;X-direction of magic bugged&#10;O-some chats corrected &#10;O- other fixes">
+      <created>1686627018610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686627018611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="6dff54d6-4112-47b6-a7eb-81dbcdfb0c8c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Paths">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.idea" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/References" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcherAdmin" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/ClientCFG" />
+                  <option value="file:$PROJECT_DIR$/MIR2.ICO" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Components" />
+                  <option value="file:$PROJECT_DIR$/lastchapter.sln" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Server" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.vs" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Client" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcher" />
+                  <option value="file:$PROJECT_DIR$/ServerPackets.cs" />
+                  <option value="file:$PROJECT_DIR$/Common.cs" />
+                  <option value="file:$PROJECT_DIR$/Changelog.txt" />
+                  <option value="file:$PROJECT_DIR$/Notes.txt" />
+                  <option value="file:$PROJECT_DIR$/README.md" />
+                  <option value="file:$PROJECT_DIR$/ClientPackets.cs" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/packages" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/LibraryEditor" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="6dff54d6-4112-47b6-a7eb-81dbcdfb0c8c">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.idea" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/References" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcherAdmin" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/ClientCFG" />
+                        <option value="file:$PROJECT_DIR$/MIR2.ICO" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Components" />
+                        <option value="file:$PROJECT_DIR$/lastchapter.sln" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Server" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.vs" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Client" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcher" />
+                        <option value="file:$PROJECT_DIR$/ServerPackets.cs" />
+                        <option value="file:$PROJECT_DIR$/Common.cs" />
+                        <option value="file:$PROJECT_DIR$/Changelog.txt" />
+                        <option value="file:$PROJECT_DIR$/Notes.txt" />
+                        <option value="file:$PROJECT_DIR$/README.md" />
+                        <option value="file:$PROJECT_DIR$/ClientPackets.cs" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/packages" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/LibraryEditor" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="lastchapter's first push!" />
+    <MESSAGE value="first push?" />
+    <MESSAGE value="X-drops depending on level works but not grade&#10;X-direction of magic bugged&#10;O-some chats corrected &#10;O- other fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="X-drops depending on level works but not grade&#10;X-direction of magic bugged&#10;O-some chats corrected &#10;O- other fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Client/MirScenes/Dialogs/FieldMapDialog.cs</url>
+          <line>205</line>
+          <properties documentPath="C:\Users\alatt\OneDrive\Desktop\$Fables\Client\MirScenes\Dialogs\FieldMapDialog.cs" initialLine="204" containingFunctionPresentation="Method 'MapImage_DrawAfter'">
+            <startOffsets>
+              <option value="8337" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8380" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#System.EventArgs" memberName="Empty" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

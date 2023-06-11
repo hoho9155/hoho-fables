@@ -1,0 +1,51 @@
+H:\WIP Files\Source Code (2018-02-17)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+H:\WIP Files\Source Code (2018-02-17)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe
+H:\WIP Files\Source Code (2018-02-17)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csprojResolveAssemblyReference.cache
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.GenerateResource.Cache
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.exe
+H:\WIP Files\Source Code (2018-02-17)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-06)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+H:\WIP Files\__Source Code (2018-05-06)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-06)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-06)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-11)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+H:\WIP Files\__Source Code (2018-05-11)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-11)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-11)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-30)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+H:\WIP Files\__Source Code (2018-05-30)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-30)\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.AMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.exe
+H:\WIP Files\__Source Code (2018-05-30)\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.pdb
+C:\Users\alatt\OneDrive\Desktop\$Fables\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe.config
+C:\Users\alatt\OneDrive\Desktop\$Fables\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.exe
+C:\Users\alatt\OneDrive\Desktop\$Fables\Build\Server Tools\AutoPatcherAdmin\AutoPatcherAdmin.pdb
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.AMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.exe
+C:\Users\alatt\OneDrive\Desktop\$Fables\AutoPatcherAdmin\obj\Debug\AutoPatcherAdmin.pdb

@@ -1,0 +1,551 @@
+H:\WIP Files\_Client\Server.exe
+H:\WIP Files\_Client\Server.pdb
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.exe
+H:\WIP Files\Source Code (2018-02-17)\Server\obj\Debug\Server.pdb
+H:\WIP Files\_Server\Server.exe
+H:\WIP Files\_Server\Server.pdb
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-02-17)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-04-29)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-06)\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-05-11)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-05-30)\Server\obj\Debug\Server.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-08-03\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.pdb
+H:\WIP Files\__Source Code (2018-08-11)\Server\obj\Debug\Server.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.AccountInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.PlayerInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.BalanceConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.ConfigForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.GameShop.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MagicInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.ConquestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.DragonInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.ItemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MapInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.GuildInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MiningInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.SystemInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.QuestInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.NPCInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.MonsterInfoForm.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.SMain.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.exe
+H:\WIP Files\__Source Code (2018-08-24)\Server\obj\Debug\Server.pdb
+C:\Users\Paul McGinley\Desktop\_Server\Server.exe
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.ConfigForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.GameShop.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MapInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.SMain.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.exe
+C:\Users\Paul McGinley\Desktop\__Source Code (2018-08-24)\Server\obj\Debug\Server.pdb
+C:\Users\Paul McGinley\Desktop\_Server\Server.pdb
+C:\$SourceFables\_Server\Server.exe
+C:\$SourceFables\_Server\Server.pdb
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.ConfigForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.GameShop.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MapInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.SMain.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.Properties.Resources.resources
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.csproj.CopyComplete
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.exe
+C:\$SourceFables\$Source Code\Server\obj\Debug\Server.pdb
+C:\Users\alatt\OneDrive\Desktop\_Server\Server.exe.config
+C:\Users\alatt\OneDrive\Desktop\_Server\Server.exe
+C:\Users\alatt\OneDrive\Desktop\_Server\Server.pdb
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.ConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.GameShop.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MapInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.SMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.exe
+C:\Users\alatt\OneDrive\Desktop\$Source Code\Server\obj\Debug\Server.pdb
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.ConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.GameShop.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MapInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.SMain.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.exe
+C:\Users\alatt\OneDrive\Desktop\_Source_2023\Server\obj\Debug\Server.pdb
+C:\Users\alatt\OneDrive\Desktop\_Server_2023\Server.exe.config
+C:\Users\alatt\OneDrive\Desktop\_Server_2023\Server.exe
+C:\Users\alatt\OneDrive\Desktop\_Server_2023\Server.pdb
+D:\$_Source_2023\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\$_Source_2023\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+D:\$_Source_2023\Server\obj\Debug\Server.AccountInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.PlayerInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.BalanceConfigForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.ConfigForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.GameShop.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MagicInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.ConquestInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.DragonInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.ItemInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MapInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.GuildInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MiningInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.SystemInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.QuestInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.NPCInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.MonsterInfoForm.resources
+D:\$_Source_2023\Server\obj\Debug\Server.SMain.resources
+D:\$_Source_2023\Server\obj\Debug\Server.Properties.Resources.resources
+D:\$_Source_2023\Server\obj\Debug\Server.csproj.GenerateResource.cache
+D:\$_Source_2023\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\$_Source_2023\Server\obj\Debug\Server.csproj.CopyComplete
+D:\$_Source_2023\Server\obj\Debug\Server.exe
+D:\$_Source_2023\Server\obj\Debug\Server.pdb
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.ConfigForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.GameShop.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MapInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.SMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.exe
+C:\Users\alatt\OneDrive\Desktop\$Fables\Server\obj\Debug\Server.pdb
+E:\projects\c# online game\_Server_2023\Server.exe.config
+E:\projects\c# online game\_Server_2023\Server.exe
+E:\projects\c# online game\_Server_2023\Server.pdb
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.AccountInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.PlayerInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.BalanceConfigForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.ConfigForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.GameShop.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MagicInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.ConquestInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.DragonInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.ItemInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MapInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.GuildInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MiningInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.SystemInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.QuestInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.NPCInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.MonsterInfoForm.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.SMain.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.Properties.Resources.resources
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.csproj.CopyComplete
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.exe
+E:\projects\c# online game\thelastchapter-fables\Server\obj\Debug\Server.pdb
+C:\Users\rwk\_Server_2023\Server.exe.config
+C:\Users\rwk\_Server_2023\Server.exe
+C:\Users\rwk\_Server_2023\Server.pdb
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.AccountInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.PlayerInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.BalanceConfigForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.ConfigForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.GameShop.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MagicInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.ConquestInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.DragonInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.ItemInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MapInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.DropBuilder.DropGenForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.GuildInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MiningInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.Systems.MonsterTunerForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.SystemInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.MiningDetailForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.Forms.RespawnsDetailForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.MineEntry.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.VisualMapInfo.Control.RespawnEntry.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MirForms.VisualMapInfo.VForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.QuestInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.NPCInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.MonsterInfoForm.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.SMain.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.exe
+C:\Users\alatt\source\repos\ShieldsUpdated\Server\obj\Debug\Server.pdb
+E:\OneDrive\Desktop\_Server_2023\Server.exe.config
+E:\OneDrive\Desktop\_Server_2023\Server.exe
+E:\OneDrive\Desktop\_Server_2023\Server.pdb

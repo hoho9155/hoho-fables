@@ -1,0 +1,53 @@
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csprojResolveAssemblyReference.cache
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.Cache
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+H:\WIP Files\Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csprojResolveAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.Cache
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+H:\WIP Files\__Source Code (2018-02-17)\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+H:\WIP Files\__Source Code (2018-05-06)\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+H:\WIP Files\__Source Code (2018-05-11)\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb
+H:\WIP Files\_Client\LibraryEditor.exe.config
+H:\WIP Files\_Client\LibraryEditor.exe
+H:\WIP Files\_Client\LibraryEditor.pdb
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CopyComplete
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+H:\WIP Files\__Source Code (2018-05-30)\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb
+C:\Users\alatt\OneDrive\Desktop\Tools\FablesTools\LibraryEditor.exe.config
+C:\Users\alatt\OneDrive\Desktop\Tools\FablesTools\LibraryEditor.exe
+C:\Users\alatt\OneDrive\Desktop\Tools\FablesTools\LibraryEditor.pdb
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.AssemblyReference.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.SuggestedBindingRedirects.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.LMain.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\Library_Editor.Properties.Resources.resources
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.GenerateResource.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CoreCompileInputs.cache
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.csproj.CopyComplete
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.exe
+C:\Users\alatt\OneDrive\Desktop\$Source Code\LibraryEditor\obj\x86\Debug\LibraryEditor.pdb

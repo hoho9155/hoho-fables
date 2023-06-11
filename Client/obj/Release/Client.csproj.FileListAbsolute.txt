@@ -1,0 +1,20 @@
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\Client\Client.exe.config
+H:\WIP Files\Client\Client.exe
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.exe
+H:\WIP Files\_Client\Client.exe.config
+H:\WIP Files\_Client\Client.exe
+H:\WIP Files\__Source Code (2018-05-30)\Client\obj\Release\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.csprojAssemblyReference.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Launcher.AMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.CMain.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Launcher.Config.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.Properties.Resources.resources
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.csproj.GenerateResource.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+H:\WIP Files\__Source Code (2018-08-11)\Client\obj\Release\Client.exe
