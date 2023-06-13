@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using Server.MirEnvir;
+using Server.MirObjects;
 
 namespace Server.MirDatabase
 {
@@ -17,6 +17,8 @@ namespace Server.MirDatabase
         public byte AI, Effect, ViewRange = 7, CoolEye;
         public ushort Level;
         public UInt16 CurrentHP, MaximumHP;
+
+        public byte MobLevel;
 
         public uint HP;
         public byte Accuracy, Agility, Light, MobGrade;
@@ -112,6 +114,7 @@ namespace Server.MirDatabase
             if (Envir.LoadVersion < 78) return;
             MobGrade = reader.ReadByte();
         }
+        
 
         public string GameName
         {
@@ -161,6 +164,7 @@ namespace Server.MirDatabase
 
         public void LoadDrops()
         {
+            
             Drops.Clear();
             string path = Path.Combine(Settings.DropPath, Name + ".txt");
             if (!File.Exists(path))
@@ -197,7 +201,51 @@ namespace Server.MirDatabase
                     SMain.Enqueue(string.Format("Could not load Drop: {0}, Line {1}", Name, lines[i]));
                     continue;
                 }
-
+                
+                MapObject mon = new MonsterObject(this);
+                    
+                if (mon.Level == 6)
+                {
+                    // Reduce the drop chance by 7000% (divide by 100 and multiply by 3)
+                    drop.Chance /= 100;
+                    drop.Chance *= 3;
+                }
+                else if (mon.MobLevel == 5)
+                {
+                    // Reduce the drop chance by 60% (divide by 5 and multiply by 2)
+                    drop.Chance /= 5;
+                    drop.Chance *= 2;
+                }
+                else if (mon.MobLevel == 4)
+                {
+                    // Reduce the drop chance by 50% (divide by 2)
+                    drop.Chance /= 2;
+                }
+                else if (mon.MobLevel == 3)
+                {
+                    // Reduce the drop chance by 40% (divide by 7 and multiply by 3)
+                    drop.Chance /= 7;
+                    drop.Chance *= 3;
+                }
+                else if (mon.MobLevel == 2)
+                {
+                    // Reduce the drop chance by 30% (divide by 10 and multiply by 7)
+                    drop.Chance /= 10;
+                    drop.Chance *= 7;
+                }
+                else if (mon.MobLevel == 1)
+                {
+                    // Reduce the drop chance by 20% (divide by 5)
+                    drop.Chance /= 5;
+                }
+                
+                // else if (mon.MobLevel == 0)
+                // {
+                //     // Reduce the drop chance by 15% (divide by 20 and multiply by 17)
+                //     drop.Chance /= 20;
+                //     drop.Chance *= 17;
+                // }
+                
                 Drops.Add(drop);
             }
 

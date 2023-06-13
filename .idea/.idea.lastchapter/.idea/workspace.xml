@@ -20,7 +20,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac4f89a3-676b-4da6-9313-42877d0a7c23" name="Changes" comment="" />
+    <list default="true" id="ac4f89a3-676b-4da6-9313-42877d0a7c23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.lastchapter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lastchapter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/KeyBindSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/KeyBindSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/Dialogs/MainDialogs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/Dialogs/MainDialogs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/MirScenes/GameScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/MirScenes/GameScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/Client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/Client.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ClientCFG/obj/Debug/ClientCFG.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirDatabase/MonsterInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirDatabase/MonsterInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/ItemObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/ItemObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/MapObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/MapObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/MonsterObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/MonsterObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/NPCObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/NPCObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/Server.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,12 +57,26 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4b76c3e709534801a173f34a1d6b3dfc522790/4f/1097f0e7/Byte.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Client/MirScenes/Dialogs/FieldMapDialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Client/MirScenes/GameScene.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClientPackets.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Common.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="vcs://C:/Users/alatt/OneDrive/Desktop/$Fables/LibraryEditor/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Common.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirDatabase/CharacterInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirDatabase/MonsterInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/MapObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/MonsterObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/Monsters/YinDevilNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/MirObjects/PlayerObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPackets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Common.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Server/MirDatabase/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/$LatestFablesSource_GradedMobs/Server/MirObjects/PlayerObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,74 +91,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeInspectionSettingsId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Rider.SolutionAnalysis.ShowIgnored": "true",
+    "Rider.SolutionAnalysis.ShowPreview": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
+    "two.files.diff.last.used.file": "D:/$LatestFablesSource_GradedMobs/Common.cs",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\alatt\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\alatt\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\alatt\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RiderProblemsViewState">
+    <option name="groupByToolId" value="true" />
     <hideBySeverity>
       <option value="15" />
       <option value="20" />
       <option value="300" />
     </hideBySeverity>
   </component>
-  <component name="RunManager" selected=".NET Project.AutoPatcherAdmin">
-    <configuration name="AutoPatcherAdmin" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AutoPatcherAdmin/AutoPatcherAdmin.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="ChineseWingToCSharpWing" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ChineseWingToCSharpWing/ChineseWingToCSharpWing.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected=".NET Project.Client">
     <configuration name="Client" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_Client_2023/Client.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_Client_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -128,15 +136,15 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <configuration name="ClientCFG" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ClientCFG/bin/Debug/ClientCFG.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ClientCFG/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -146,97 +154,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="CrystalScriptEditor" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CrystalScriptEditor/CrystalScriptEditor.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="GenerateMapPointList" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/GenerateMapPointList/GenerateMapPointList.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="LibraryEditor" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LibraryEditor/LibraryEditor.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="LibraryViewer" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LibraryViewer/LibraryViewer.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="MapEditor" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Zeds Minimap Creator/DX_02/MapEditor.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -253,34 +171,16 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="RemoveSpaceInLibraryFolder" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RemoveSpaceInLibraryFolder/RemoveSpaceInLibraryFolder.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <configuration name="Server" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_Server_2023/Server.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../_Server_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -290,47 +190,17 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="ServerTelnetTest" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ServerTelnetTest/ServerTelnetTest.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WoOOLHexNameToInt" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WoOOLHexNameToInt/WoOOLHexNameToInt.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Client" />
+      <item itemvalue=".NET Project.ClientCFG" />
+      <item itemvalue=".NET Project.MapTileSet" />
+      <item itemvalue=".NET Project.Server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -341,6 +211,8 @@
       <option name="presentableId" value="Default" />
       <updated>1686480818579</updated>
       <workItem from="1686480819913" duration="5779000" />
+      <workItem from="1686486968811" duration="47961000" />
+      <workItem from="1686587757938" duration="15397000" />
     </task>
     <task id="LOCAL-00001" summary="lastchapter's first push!">
       <created>1686486298365</created>
@@ -349,17 +221,68 @@
       <option name="project" value="LOCAL" />
       <updated>1686486298365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first push?">
+      <created>1686487149884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686487149884</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="6dff54d6-4112-47b6-a7eb-81dbcdfb0c8c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Paths">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.idea" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/References" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcherAdmin" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/ClientCFG" />
+                  <option value="file:$PROJECT_DIR$/MIR2.ICO" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Components" />
+                  <option value="file:$PROJECT_DIR$/lastchapter.sln" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Server" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.vs" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Client" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcher" />
+                  <option value="file:$PROJECT_DIR$/ServerPackets.cs" />
+                  <option value="file:$PROJECT_DIR$/Common.cs" />
+                  <option value="file:$PROJECT_DIR$/Changelog.txt" />
+                  <option value="file:$PROJECT_DIR$/Notes.txt" />
+                  <option value="file:$PROJECT_DIR$/README.md" />
+                  <option value="file:$PROJECT_DIR$/ClientPackets.cs" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/packages" />
+                  <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/LibraryEditor" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="TAB_STATES">
@@ -391,7 +314,44 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.idea" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/References" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcherAdmin" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/ClientCFG" />
+                        <option value="file:$PROJECT_DIR$/MIR2.ICO" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Components" />
+                        <option value="file:$PROJECT_DIR$/lastchapter.sln" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Server" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/.vs" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/Client" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/AutoPatcher" />
+                        <option value="file:$PROJECT_DIR$/ServerPackets.cs" />
+                        <option value="file:$PROJECT_DIR$/Common.cs" />
+                        <option value="file:$PROJECT_DIR$/Changelog.txt" />
+                        <option value="file:$PROJECT_DIR$/Notes.txt" />
+                        <option value="file:$PROJECT_DIR$/README.md" />
+                        <option value="file:$PROJECT_DIR$/ClientPackets.cs" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/packages" />
+                        <option value="dir:C:/Users/alatt/OneDrive/Desktop/$Fables/LibraryEditor" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -400,6 +360,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="lastchapter's first push!" />
-    <option name="LAST_COMMIT_MESSAGE" value="lastchapter's first push!" />
+    <MESSAGE value="first push?" />
+    <option name="LAST_COMMIT_MESSAGE" value="first push?" />
   </component>
 </project>

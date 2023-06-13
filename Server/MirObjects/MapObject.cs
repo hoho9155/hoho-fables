@@ -52,12 +52,12 @@ namespace Server.MirObjects
         public abstract uint MaxHealth { get; }
         public byte PercentHealth
         {
-            get { return (byte) (Health/(float) MaxHealth*100); }
+            get { return (byte) (Health/(float) MaxHealth * 100); }
 
         }
-
-        public byte MobLevel = 0;
-        public byte MonsterGrade = 0;
+        
+         public byte MobLevel = 0;
+         public byte MonsterGrade = 0;
 
         public ushort MinAC, MaxAC, MinMAC, MaxMAC;
         public ushort MinDC, MaxDC, MinMC, MaxMC, MinSC, MaxSC;
@@ -174,7 +174,9 @@ namespace Server.MirObjects
 
         public List<MonsterObject> Pets = new List<MonsterObject>();
         public List<Buff> Buffs = new List<Buff>();
-
+        public List<NPCSpeak> NPCSpeakList = new List<NPCSpeak>();
+        public byte NPCSpeakLine = 0;
+        public long NPCSpeakLineDelayTime = 0;
         public List<PlayerObject> GroupMembers;
 
         public virtual AttackMode AMode { get; set; }

@@ -65,13 +65,14 @@ namespace Server.MirObjects
 
             if (Item.IsAdded && (item.Info.Grade == ItemGrade.None | item.Info.Grade == ItemGrade.Common | item.Info.Grade == ItemGrade.Quest))
                 NameColour = Color.Cyan;
+                
             else
             {
 
                 if (item.Info.Grade == ItemGrade.Common)
-                    NameColour = Color.Yellow;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.Rare)
-                    NameColour = Color.DeepSkyBlue;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.Legendary)
                     NameColour = Color.DarkOrange;
                 if (item.Info.Grade == ItemGrade.Mythical)
@@ -79,9 +80,9 @@ namespace Server.MirObjects
                 if (item.Info.Grade == ItemGrade.Elite)
                     NameColour = Color.Crimson;
                 if (item.Info.Grade == ItemGrade.Quest)
-                    NameColour = Color.LightSeaGreen;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.None)
-                    NameColour = Color.Gray;
+                    NameColour = Color.White;
             }
 
 			CurrentMap = dropper.CurrentMap;
@@ -98,9 +99,9 @@ namespace Server.MirObjects
             else
             {
                 if (item.Info.Grade == ItemGrade.Common)
-                    NameColour = Color.Yellow;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.Rare)
-                    NameColour = Color.DeepSkyBlue;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.Legendary)
                     NameColour = Color.DarkOrange;
                 if (item.Info.Grade == ItemGrade.Mythical)
@@ -108,9 +109,9 @@ namespace Server.MirObjects
                 if (item.Info.Grade == ItemGrade.Elite)
                     NameColour = Color.Crimson;
                 if (item.Info.Grade == ItemGrade.Quest)
-                    NameColour = Color.LightSeaGreen;
+                    NameColour = Color.White;
                 if (item.Info.Grade == ItemGrade.None)
-                    NameColour = Color.Gray;
+                    NameColour = Color.White;
             }
 
             CurrentMap = dropper.CurrentMap;

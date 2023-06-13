@@ -47,6 +47,7 @@ namespace Client
         Options,
         Options2,
         Group,
+        BigMap,
         Belt,
         BeltFlip,
         Pickup,
@@ -275,6 +276,8 @@ namespace Client
             Keylist.Add(InputKey);
             InputKey = new KeyBind { function = KeybindOptions.FieldMapDialog, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.B };
             Keylist.Add(InputKey);
+            InputKey = new KeyBind { function = KeybindOptions.BigMap, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.D0 };
+            Keylist.Add(InputKey);
             InputKey = new KeyBind { function = KeybindOptions.Trade, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.T };
             Keylist.Add(InputKey);
             InputKey = new KeyBind { function = KeybindOptions.Rental, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 0, Key = Keys.A };
@@ -300,8 +303,6 @@ namespace Client
             InputKey = new KeyBind { function = KeybindOptions.PetmodeMoveonly, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.None };
             Keylist.Add(InputKey);
             InputKey = new KeyBind { function = KeybindOptions.PetmodeAttackonly, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.None };
-            Keylist.Add(InputKey);
-            InputKey = new KeyBind { function = KeybindOptions.PetmodeNone, RequireAlt = 2, RequireShift = 2, RequireTilde = 2, RequireCtrl = 2, Key = Keys.None};
             Keylist.Add(InputKey);
             InputKey = new KeyBind { function = KeybindOptions.Help, RequireAlt = 2, RequireShift = 0, RequireTilde = 2, RequireCtrl = 2, Key = Keys.H };
             Keylist.Add(InputKey);

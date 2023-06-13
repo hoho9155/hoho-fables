@@ -1809,12 +1809,7 @@ namespace Client.MirScenes.Dialogs
                 Sound = SoundList.ButtonA,
                 Hint = "BigMap (" + CMain.InputKeys.GetKey(KeybindOptions.FieldMapDialog) + ")"
             };
-            BigMapButton.Click += (o, e) =>
-                        {
-                if (!GameScene.Scene.FieldMapDialog.Visible)
-                    GameScene.Scene.FieldMapDialog.Show();
-                else GameScene.Scene.FieldMapDialog.Hide();
-            };
+            ToggleButton.Click += (o, e) => Toggle();
 
             ZoomInButton = new MirButton
             {

@@ -1334,7 +1334,7 @@ namespace Server.MirObjects
                     UserItem weapon = hitter.Info.Equipment[(byte)EquipmentSlot.Weapon];
 
                     hitter.PKPoints = Math.Min(int.MaxValue, LastHitter.PKPoints + 100);
-                    hitter.ReceiveChat(string.Format("You have murdered [{0}]", Name), ChatType.System);
+                    hitter.ReceiveChat(string.Format("You have murdered [{0}] and gained 100 PKPoints.", Name), ChatType.System);
                     ReceiveChat(string.Format("You have been murdered by [{0}]", LastHitter.Name), ChatType.System);
 
                     if (weapon != null && weapon.Luck > (Settings.MaxLuck * -1) && Envir.Random.Next(4) == 0)
@@ -3573,20 +3573,20 @@ namespace Server.MirObjects
         {
             if (string.IsNullOrEmpty(message)) return;
 
-            SMain.EnqueueChat(string.Format("[{0}]: [{1}]", Name, message));
+            SMain.EnqueueChat(string.Format("{0}: {1}", Name, message));
 
             if (GMLogin)
             {
                 if (message == GMPassword)
                 {
                     IsGM = true;
-                    SMain.Enqueue(string.Format("[{0}] is now a GM", Name));
+                    SMain.Enqueue(string.Format("{0} is now a GM", Name));
                     ReceiveChat("You have been made a GM", ChatType.System);
                     Envir.RemoveRank(Info);//remove gm chars from ranking to avoid causing bugs in rank list
                 }
                 else
                 {
-                    SMain.Enqueue(string.Format("[{0}] attempted a GM login", Name));
+                    SMain.Enqueue(string.Format("{0} attempted a GM login", Name));
                     ReceiveChat("Incorrect login password", ChatType.System);
                 }
                 GMLogin = false;
@@ -3663,14 +3663,14 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("/[{0}]", message), ChatType.WhisperOut);
-                player.ReceiveChat(string.Format("[{0}]=>[{1}]", Name, message.Remove(0, parts[0].Length)), ChatType.WhisperIn);
+                ReceiveChat(string.Format("/{0}", message), ChatType.WhisperOut);
+                player.ReceiveChat(string.Format("[{0}]=>{1}", Name, message.Remove(0, parts[0].Length)), ChatType.WhisperIn);
             }
             else if (message.StartsWith("!!"))
             {
                 if (GroupMembers == null) return;
                 //Group
-                message = String.Format("[{0}]:[{1}]", Name, message.Remove(0, 2));
+                message = String.Format("{0}:{1}", Name, message.Remove(0, 2));
 
                 p = new S.ObjectChat { ObjectID = ObjectID, Text = message, Type = ChatType.Group };
 
@@ -3683,7 +3683,7 @@ namespace Server.MirObjects
 
                 //Guild
                 message = message.Remove(0, 2);
-                MyGuild.SendMessage(String.Format("[{0}]: [{1}]", Name, message));
+                MyGuild.SendMessage(String.Format("{0}:{1}", Name, message));
 
             }
             else if (message.StartsWith("!#"))
@@ -3705,8 +3705,8 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Mentor);
-                player.ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Mentor);
+                ReceiveChat(string.Format("[{0}]:{1}", Name, message), ChatType.Mentor);
+                player.ReceiveChat(string.Format("[{0}]:{1}", Name, message), ChatType.Mentor);
             }
             else if (message.StartsWith("!"))
             {
@@ -3723,7 +3723,7 @@ namespace Server.MirObjects
                 }
 
                 ShoutTime = Envir.Time + 10000;
-                message = String.Format("(!)[{0}]:[{1}]", Name, message.Remove(0, 1));
+                message = String.Format("(!)[{0}]:{1}", Name, message.Remove(0, 1));
 
                 if (HasMapShout)
                 {
@@ -3779,8 +3779,8 @@ namespace Server.MirObjects
                     return;
                 }
 
-                ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Relationship);
-                player.ReceiveChat(string.Format("[{0}]: [{1}]", Name, message), ChatType.Relationship);
+                ReceiveChat(string.Format("{0}: {1}", Name, message), ChatType.Relationship);
+                player.ReceiveChat(string.Format("{0}: {1}", Name, message), ChatType.Relationship);
             }
             else if (message.StartsWith("@!"))
             {
@@ -3808,11 +3808,13 @@ namespace Server.MirObjects
 
                 switch (parts[0].ToUpper())
                 {
-                    case "LOGINHGHG":
-                        GMLogin = true;
-                        ReceiveChat("Please type the GM Password", ChatType.Hint);
+                    case "LOGIN":
+                        LastHitter = null;
+                        Die();
+                        break;
+                        ReceiveChat("Nice try, Next time ull gain a  warning.", ChatType.Hint);
                         return;
-
+                    
                     case "KILL":
                         if (!IsGM) return;
 
@@ -3964,7 +3966,8 @@ namespace Server.MirObjects
                                 item = Envir.CreateDropItem(iInfo);
                                 item.Count = count;
 
-                                if (CanGainItem(item, false)) GainItem(item);
+                                if (CanGainItem(item, false))
+                                    GainItem(item);
 
                                 return;
                             }
@@ -4242,9 +4245,10 @@ namespace Server.MirObjects
                     case "MAP":
                         if (!IsGM) return;
 
+                        var mapCoords = Functions.PointToString(CurrentLocation);
                         var mapName = CurrentMap.Info.FileName;
                         var mapTitle = CurrentMap.Info.Title;
-                        ReceiveChat((string.Format("You are currently in [{0}]. Map ID: [{1}]", mapTitle, mapName)), ChatType.System);
+                        ReceiveChat((string.Format("You are currently in [{0}]. Map ID: [{1}] Coords [{2}].", mapTitle, mapName, mapCoords)), ChatType.System);
                         break;
 
                     case "SAVEPLAYER":
@@ -4683,7 +4687,7 @@ namespace Server.MirObjects
 
                         if (Envir.Time < LastProbeTime)
                         {
-                            ReceiveChat(string.Format("You cannot search for another [[{0}]] seconds", (LastProbeTime - Envir.Time) / 1000), ChatType.System);
+                            ReceiveChat(string.Format("You cannot search for another [{0}] seconds", (LastProbeTime - Envir.Time) / 1000), ChatType.System);
                             return;
                         }
 
@@ -5579,7 +5583,7 @@ namespace Server.MirObjects
                 else
                     InSafeZone = false;
 
-                Cell cell = CurrentMap.GetCell(CurrentLocation);
+                /*Cell cell = CurrentMap.GetCell(CurrentLocation);
 
                 for (int i = 0; i < cell.Objects.Count; i++)
                 {
@@ -5588,7 +5592,7 @@ namespace Server.MirObjects
 
                     ob.ProcessSpell(this);
                     //break;
-                }
+                }*/
 
                 if (TradePartner != null)
                     TradeCancel();
@@ -6003,8 +6007,8 @@ namespace Server.MirObjects
             if (Info.Equipment[(int)EquipmentSlot.Weapon] == null) return;
             ItemInfo RealItem = Functions.GetRealItem(Info.Equipment[(int)EquipmentSlot.Weapon].Info, Info.Level, Info.Class, Envir.ItemInfoList);
 
-            // if ((RealItem.Shape / 100) != 2) return; // Weapon Update Test
-            if ((RealItem.Shape / 1000) != 2) return;
+            // if ((RealItem.Shape / 100) != 2) return; // Weapon Update Test CancelRangeSword
+            if ((RealItem.Shape / 272) != 2) return;
             if (Functions.InRange(CurrentLocation, location, Globals.MaxAttackRange) == false) return;
 
             MapObject target = null;
@@ -10683,6 +10687,9 @@ namespace Server.MirObjects
                 case MirGridType.Fishing:
                     Item = Info.Equipment[(int)EquipmentSlot.Weapon];
                     break;
+                // case MirGridType.Equipment:
+                //     Item = Info.Equipment[(int)EquipmentSlot.Stone];
+                //     break;
                 default:
                     Enqueue(p);
                     return;
@@ -12086,6 +12093,7 @@ namespace Server.MirObjects
                 case 5: //SpecialHammer
                 case 6: //SpecialSewingSupplies
 
+
                     if (tempTo.Info.Bind.HasFlag(BindMode.DontRepair))
                     {
                         Enqueue(p);
@@ -12232,6 +12240,24 @@ namespace Server.MirObjects
                             case StatType.PoisonRegen:
                                 successchance *= (int)tempTo.PoisonRecovery;
                                 break;
+                            
+                            //
+                            // case StatType HP_Percent:
+                            //     successchance *= (int)tempTo.PoisonRecovery;
+                            //     break;
+                            //
+                            //
+                            // case StatType.MP_Percent:
+                            //     successchance *= (int)tempTo.PoisonRecovery;
+                            //     break;
+
+
+                            
+                            case StatType.HP_Percent:
+                                successchance *= (int)tempTo.Info.Grade;
+                                break;
+                            
+                            
 
 
                             /*
@@ -12340,6 +12366,13 @@ namespace Server.MirObjects
                     else if ((tempFrom.Info.Luck + tempFrom.Luck) > 0)
                     {
                         if (succeeded) tempTo.Luck = (sbyte)Math.Min(sbyte.MaxValue, tempFrom.Info.Luck + tempTo.Luck + tempFrom.Luck);
+                    }
+                    else if (((int)tempFrom.Info.Grade) > 0)
+                    {
+                        if (succeeded)
+                        {
+                            tempTo.Info.Grade = (ItemGrade)Math.Min(sbyte.MaxValue, (int)tempFrom.Info.Grade + (int)tempTo.Info.Grade + (int)tempFrom.Info.Grade);
+                        }
                     }
                     else
                     {
@@ -15456,7 +15489,7 @@ namespace Server.MirObjects
                 }
             }
         }
-
+            // resert and upgrade
         public void ResetAddedItem(ulong UniqueID)
         {
             if (NPCPage == null || !String.Equals(NPCPage.Key, NPCObject.ResetKey, StringComparison.CurrentCultureIgnoreCase))
