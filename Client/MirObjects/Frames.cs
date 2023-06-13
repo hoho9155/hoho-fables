@@ -79,6 +79,30 @@ namespace Client.MirObjects
             Players.Frames.Add(MirAction.FishingCast, new Frame(632, 8, 0, 100));
             Players.Frames.Add(MirAction.FishingWait, new Frame(696, 6, 0, 120));
             Players.Frames.Add(MirAction.FishingReel, new Frame(744, 8, 0, 100));
+            
+            
+             //ihaln combo spells
+
+             Players.Frames.Add(MirAction.Combo1, new Frame(1664, 8, 0, 800, 300, 1, 5, 1000)); // HeadBurst - FT
+             Players.Frames.Add(MirAction.Combo2, new Frame(1728, 14, 0, 400, 300, 1, 5, 1000)); // Warr double slashing
+             Players.Frames.Add(MirAction.Combo3, new Frame(1848, 6, 0, 700, 1896, 13, 5, 1000)); // warr slashing thunder ( jumping animation ) + warr storm AOE attack ( jumping animation )
+
+             Players.Frames.Add(MirAction.Combo4, new Frame(2080, 6, 0, 350, 2176, 8, 5, 500)); // tao mele - attacking the floor
+             Players.Frames.Add(MirAction.Combo5, new Frame(2240, 10, 0, 600, 0, 0, 0, 500)); // tao sacrafice - flying from the floor
+             Players.Frames.Add(MirAction.Combo6, new Frame(2672, 12, 0, 750, 0, 0, 0, 500)); // KAMEHAMEHA 
+
+             //Players.Frames.Add(MirAction.ComboAttack8, new Frame(2816, 6, 4, 80, 0, 0, 0, 0)); // TigerLeash - ShootTiger
+             //Players.Frames.Add(MirAction.ComboAttack7, new Frame(1696, 8, 2, 60, 0, 0, 0, 0)); // DeathSpear
+             //Players.Frames.Add(MirAction.ComboAttack6, new Frame(231, 10, 0, 60, 0, 0, 0, 0)); // Assassination after backstabbing target :p
+             //Players.Frames.Add(MirAction.ComboAttack5, new Frame(2025, 8, 2, 150, 0, 0, 0, 0)); // AlmightyPower
+             //Players.Frames.Add(MirAction.ComboAttack4, new Frame(808, 5, 0, 130, 0, 0, 0, 0)); // Assassinate casting attempt
+             //Players.Frames.Add(MirAction.ComboAttack3, new Frame(4665, 12, 8, 70, 0, 0, 0, 0));
+             //Players.Frames.Add(MirAction.ComboAttack2, new Frame(1315, 8, 2, 50, 0, 0, 0, 0)); // PhoenixResurrect
+             //Players.Frames.Add(MirAction.ComboAttack1, new Frame(2188, 7, 0, 80, 0, 0, 0, 0)); // BoundingCircle
+
+
+
+
 
             #endregion
 

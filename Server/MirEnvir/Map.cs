@@ -1236,9 +1236,9 @@ namespace Server.MirEnvir
 
                 #region ThunderStorm
 
-                case Spell.ThunderStorm:
                 case Spell.FlameField:
                 case Spell.NapalmShot:
+                case Spell.ThunderStorm:
                 case Spell.StormEscape:
                     value = (int)data[2];
                     location = (Point)data[3];
@@ -1271,6 +1271,7 @@ namespace Server.MirEnvir
                                             if (target.Undead)
                                             {
                                                 target.ApplyPoison(new Poison { PType = PoisonType.Stun, Duration = magic.Level + 2, TickSpeed = 1000 }, player);
+                                                player.ReceiveOutputMessage("[ThunderStorm] : Your Wind element has caused a Stun.", OutputMessageType.MagicOn);
                                             }
                                             break;
                                         }

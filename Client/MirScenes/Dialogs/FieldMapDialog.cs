@@ -127,7 +127,8 @@ namespace Client.MirScenes.Dialogs
         }
         private void MapImage_MouseWheel(object sender, MouseEventArgs e)
         {
-            // TODO: Add zoom functionality
+
+
         }
         private void MapImage_MouseDown(object sender, MouseEventArgs e)
         {
@@ -237,10 +238,26 @@ namespace Client.MirScenes.Dialogs
 
                     if (ob.Race == ObjectType.Merchant)
                         Libraries.UI.Draw(416, (int)(x - 3), (int)(y - 3));
+                    
                     else if (ob.AI == 6 || ob.AI == 58 || ob.AI == 57)
                         Libraries.UI.Draw(419, (int)(x - 3), (int)(y - 3));
+                    
                     else if ((GroupDialog.GroupList.Contains(ob.Name) && MapObject.User != ob))
                         Libraries.UI.Draw(415, (int)(x - 3), (int)(y - 3));
+                    
+                    else if (ob.MobLevel == 6)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    else if (ob.MobLevel == 5)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    else if (ob.MobLevel == 4)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    else if (ob.MobLevel == 3)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    else if (ob.MobLevel == 2)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    else if (ob.MobLevel == 1)
+                        Libraries.UI.Draw(172, (int)(x - 3), (int)(y - 3));
+                    
                     else if (!ob.Name.EndsWith(string.Format("({0})", MapObject.User.Name)) && ob.Name.EndsWith(")"))
                         Libraries.UI.Draw(414, new Point((int)(x - 3), (int)(y - 3)), Color.MediumPurple);
                     else if (ob.Name.EndsWith(string.Format("({0})", MapObject.User.Name)))
@@ -329,6 +346,7 @@ namespace Client.MirScenes.Dialogs
             return true;
         }
 
+
         void UpdateMapDataIcons(string Map)
         {
             if (Map == null || Map == string.Empty) return;
@@ -405,7 +423,13 @@ namespace Client.MirScenes.Dialogs
 
             Visible = true;
         }
+        
+        public void Toggle()
+        {
+            Visible = !Visible;
 
+            Redraw();
+        }
 
     }
 

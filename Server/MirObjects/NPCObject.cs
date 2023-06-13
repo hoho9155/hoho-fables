@@ -723,7 +723,7 @@ namespace Server.MirObjects
                         Message = data[1]
                     });
 
-                     SMain.Enqueue(string.Format("Somethings wrong with the NpcSpeak lines: {0}, File: {1}", lines[i], Info.FileName));                       
+                     SMain.Enqueue(string.Format("Check : {0}, NPC: {1}", lines[i], Info.FileName));                       
                 }
             }
         }

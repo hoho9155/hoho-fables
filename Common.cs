@@ -746,7 +746,24 @@ public enum MirAction : byte
 
     FishingCast,
     FishingWait,
-    FishingReel
+    FishingReel,
+    
+    
+    Combo1,
+    Combo2,
+    Combo3,
+    Combo4,
+    Combo5,
+    Combo6,
+    
+    ComboAttack1,
+    ComboAttack2,
+    ComboAttack3,
+    ComboAttack4,
+    ComboAttack5,
+    ComboAttack6,
+    ComboAttack7,
+    ComboAttack8
 }
 
 public enum CellAttribute : byte

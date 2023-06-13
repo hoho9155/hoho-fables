@@ -10653,25 +10653,25 @@ namespace Server.MirObjects
             if (b.Visible) Broadcast(addBuff);
 
             RefreshStats();
-        }
-        public void PauseBuff(Buff b)
-        {
-            if (b == null) return;
-
-            if (b.Paused) return;
-
-            b.ExpireTime = b.ExpireTime - Envir.Time;
-            b.Paused = true;
-            Enqueue(new S.RemoveBuff { Type = b.Type, ObjectID = ObjectID });
-        }
-        public void UnpauseBuff(Buff b)
-        {
-            if (!b.Paused) return;
-
-            b.ExpireTime = b.ExpireTime + Envir.Time;
-            b.Paused = false;
-            Enqueue(new S.AddBuff { Type = b.Type, Caster = Name, Expire = b.ExpireTime - Envir.Time, Values = b.Values, Infinite = b.Infinite, ObjectID = ObjectID, Visible = b.Visible });
-        }
+        } 
+               public void PauseBuff(Buff b)
+                 {
+                     if (b == null) return;
+         
+                     if (b.Paused) return;
+         
+                     b.ExpireTime = b.ExpireTime - Envir.Time;
+                     b.Paused = true;
+                     Enqueue(new S.RemoveBuff { Type = b.Type, ObjectID = ObjectID });
+                 }
+                 public void UnpauseBuff(Buff b)
+                 {
+                     if (!b.Paused) return;
+         
+                     b.ExpireTime = b.ExpireTime + Envir.Time;
+                     b.Paused = false;
+                     Enqueue(new S.AddBuff { Type = b.Type, Caster = Name, Expire = b.ExpireTime - Envir.Time, Values = b.Values, Infinite = b.Infinite, ObjectID = ObjectID, Visible = b.Visible });
+                 }
 
         public void EquipSlotItem(MirGridType grid, ulong id, int to, MirGridType gridTo)
         {

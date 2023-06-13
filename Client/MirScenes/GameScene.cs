@@ -494,8 +494,8 @@ namespace Client.MirScenes
                         QuestLogDialog.Hide();
                         NPCAwakeDialog.Hide();
                         RefineDialog.Hide();
-                        BigMapDialog.Visible = true;
-                        FieldMapDialog.Visible = true;
+                        BigMapDialog.Visible = false;
+                        FieldMapDialog.Visible = false;
                         if (FishingStatusDialog.bEscExit) FishingStatusDialog.Cancel();
                         MailComposeLetterDialog.Hide();
                         MailComposeParcelDialog.Hide();
@@ -791,7 +791,7 @@ namespace Client.MirScenes
                     cost = magic.Level * magic.LevelCost + magic.BaseCost;
                     if (cost > MapObject.User.MP)
                     {
-                        Scene.OutputMessage("Not Enough Mana to cast.");
+                        Scene.OutputMessage("[Not enough Mana, Your low on MP]", OutputMessageType.MagicOff);
                         return;
                     }
                     TwinDrakeBlade = true;
@@ -805,7 +805,7 @@ namespace Client.MirScenes
                     cost = magic.Level * magic.LevelCost + magic.BaseCost;
                     if (cost > MapObject.User.MP)
                     {
-                        Scene.OutputMessage("Not Enough Mana to cast.");
+                        Scene.OutputMessage("[Not enough Mana, Your low on MP]", OutputMessageType.MagicOff);
                         return;
                     }
                     Network.Enqueue(new C.SpellToggle { Spell = magic.Spell, CanUse = true });
@@ -814,7 +814,7 @@ namespace Client.MirScenes
                     cost = magic.Level * magic.LevelCost + magic.BaseCost;
                     if (cost > MapObject.User.MP)
                     {
-                        Scene.OutputMessage("Not Enough Mana to cast.");
+                        Scene.OutputMessage("[Not enough Mana, Your low on MP]");
                         return;
                     }
 
@@ -830,6 +830,7 @@ namespace Client.MirScenes
                     User.NextMagic = magic;
                     User.NextMagicLocation = MapControl.MapLocation;
                     User.NextMagicObject = MapObject.MouseObject;
+                    User.NextMagicDirection = MapControl.MouseDirection();
                     break;
             }
 
@@ -840,7 +841,7 @@ namespace Client.MirScenes
             if (CMain.Time >= LogTime)
             {
                 //If Last Combat < 10 CANCEL
-                MirMessageBox messageBox = new MirMessageBox("Do you want to quit Legend of Mir?", MirMessageBoxButtons.YesNo);
+                MirMessageBox messageBox = new MirMessageBox("Do you want to Exit the Game?", MirMessageBoxButtons.YesNo);
                 messageBox.YesButton.Click += (o, e) => Program.Form.Close();
                 messageBox.Show();
             }
@@ -854,7 +855,7 @@ namespace Client.MirScenes
             if (CMain.Time >= LogTime)
             {
                 //If Last Combat < 10 CANCEL
-                MirMessageBox messageBox = new MirMessageBox("Do you want to log out of Legend of Mir?", MirMessageBoxButtons.YesNo);
+                MirMessageBox messageBox = new MirMessageBox("Do you want to Log out to Character Selection?", MirMessageBoxButtons.YesNo);
                 messageBox.YesButton.Click += (o, e) =>
                 {
                     Network.Enqueue(new C.LogOut());

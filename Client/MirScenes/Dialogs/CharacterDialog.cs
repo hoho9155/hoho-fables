@@ -26,7 +26,7 @@ namespace Client.MirScenes.Dialogs
 {
     public sealed class CharacterDialog : MirImageControl
     {
-        public MirButton CloseButton, CharacterButton, StatusButton, SkillButton, RuneButton, HermitButton;
+        public MirButton CloseButton, CharacterButton, StatusButton, SkillButton, RuneButton, ElementalButton;
         public MirImageControl CharacterPage, StatusPage, SkillPage, RunePage, HermitPage;
 
         public MirLabel NameLabel, GuildLabel, LoverLabel;
@@ -232,7 +232,7 @@ namespace Client.MirScenes.Dialogs
             };
             RuneButton.Click += (o, e) => ShowRunePage();
 
-            HermitButton = new MirButton
+            ElementalButton = new MirButton
             {
                 Library = Libraries.UI,
                 Index = 275,
@@ -241,9 +241,9 @@ namespace Client.MirScenes.Dialogs
                 PressedIndex = 275,
                 Size = new Size(47, 35),
                 Sound = SoundList.ButtonA,
-                Hint = "Hermit"
+                Hint = "Elemental Attributes"
             };
-            HermitButton.Click += (o, e) => ShowHermitPage();
+            ElementalButton.Click += (o, e) => ShowHermitPage();
 
             CloseButton = new MirButton
             {
@@ -260,15 +260,15 @@ namespace Client.MirScenes.Dialogs
             {
                 DrawFormat = TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter,
                 Parent = this,
-                Location = new Point(3, 10),
-                Size = new Size(Libraries.UI.GetTrueSize(CharacterPage.Index).Width, 20),
+                Location = new Point(-120, 15),
+                Size = new Size(Libraries.UI.GetTrueSize(CharacterPage.Index).Width, 15),
                 NotControl = true,
             };
             GuildLabel = new MirLabel
             {
                 DrawFormat = TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter,
                 Parent = CharacterPage,
-                Location = new Point(0, 0),
+                Location = new Point(-120, 0),
                 Size = new Size(Libraries.UI.GetTrueSize(CharacterPage.Index).Width, 30),
                 NotControl = true,
             };
@@ -280,7 +280,9 @@ namespace Client.MirScenes.Dialogs
                 GridType = MirGridType.Equipment,
                 Parent = CharacterPage,
                 Location = new Point(165, 269),
-                //Hint = "Shield"
+               // Hint = "Shield",
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Weapon] = new MirItemCell
             {
@@ -289,6 +291,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(121, 269),
                 // Hint = "Weapon"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Armour] = new MirItemCell
             {
@@ -297,6 +301,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 81),
                 // Hint ="Armour"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Helmet] = new MirItemCell
             {
@@ -305,6 +311,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 41),
                 // Hint = "Helmet"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Torch] = new MirItemCell
             {
@@ -313,6 +321,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 241),
                 //Hint = "Torch / Auras"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Necklace] = new MirItemCell
             {
@@ -321,6 +331,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 41),
                 // Hint = "Necklace"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.BraceletL] = new MirItemCell
             {
@@ -329,6 +341,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 81),
                 // Hint = "Left Hand Bracelet / Glove"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.BraceletR] = new MirItemCell
             {
@@ -337,6 +351,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 121),
                 // Hint = "Right Hand Bracelet / Glove"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.RingL] = new MirItemCell
             {
@@ -345,6 +361,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 161),
                 // Hint = "Left Hand Ring"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.RingR] = new MirItemCell
             {
@@ -353,6 +371,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(285, 201),
                 // Hint = "Right Hand Ring"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Amulet] = new MirItemCell
             {
@@ -361,6 +381,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 241),
                 // Hint = "Amulet / Poison"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Boots] = new MirItemCell
             {
@@ -369,6 +391,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 161),
                 //Hint = "Boots"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Belt] = new MirItemCell
             {
@@ -377,6 +401,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 121),
                 // Hint = "Belt"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Stone] = new MirItemCell
             {
@@ -385,6 +411,8 @@ namespace Client.MirScenes.Dialogs
                 Parent = CharacterPage,
                 Location = new Point(7, 201),
                 // Hint = "Stone"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
             Grid[(int)EquipmentSlot.Mount] = new MirItemCell
             {
@@ -394,6 +422,8 @@ namespace Client.MirScenes.Dialogs
                 Location = new Point(203, 62),
                 Visible = false,
                 // Hint = "Mount"
+                Border = true,
+                BorderColour = Color.Chartreuse
             };
 
             // STATS I
@@ -898,7 +928,7 @@ namespace Client.MirScenes.Dialogs
             CharacterButton.Index = 270;
             StatusButton.Index = 277;
             SkillButton.Index = 271;
-            HermitButton.Index = 275;
+            ElementalButton.Index = 275;
             RuneButton.Index = 273;
         }
         private void ShowStatusPage()
@@ -911,7 +941,7 @@ namespace Client.MirScenes.Dialogs
             CharacterButton.Index = 269;
             StatusButton.Index = 278;
             SkillButton.Index = 271;
-            HermitButton.Index = 275;
+            ElementalButton.Index = 275;
             RuneButton.Index = 273;
         }
         public void ShowSkillPage()
@@ -927,7 +957,7 @@ namespace Client.MirScenes.Dialogs
             //StateButton.Index = -1;
             SkillButton.Index = 272;
             StartIndex = 0;
-            HermitButton.Index = 275;
+            ElementalButton.Index = 275;
             RuneButton.Index = 273;
 
             ClearCoolDowns();
@@ -944,7 +974,7 @@ namespace Client.MirScenes.Dialogs
             StatusButton.Index = 277;
             //StateButton.Index = -1;
             SkillButton.Index = 271;
-            HermitButton.Index = 275;
+            ElementalButton.Index = 275;
             RuneButton.Index = 274;
         }
         public void ShowHermitPage()
@@ -959,7 +989,7 @@ namespace Client.MirScenes.Dialogs
             StatusButton.Index = 277;
             //StateButton.Index = -1;
             SkillButton.Index = 271;
-            HermitButton.Index = 276;
+            ElementalButton.Index = 276;
             RuneButton.Index = 273;
         }
 
